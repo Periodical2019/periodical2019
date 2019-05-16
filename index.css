@@ -1,0 +1,16 @@
+/*
+Note that for Bootstrap 4
+    small = 568px+
+    medium = 768px+
+    large = 992px+
+    XL = 1200px+ 
+*/
+
+@media (min-width: 992px){}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 568px){}
+
+/*Mobile First Design*/
+@media (max-width: 568px){}
