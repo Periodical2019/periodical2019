@@ -42,6 +42,11 @@ body {
 
 #button img {
     width: 40px;
+    cursor: pointer;
+}
+/*NAV EFFECT*/
+#button img:hover {
+    width: 45px;
 }
 
 #logo img {
