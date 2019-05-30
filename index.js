@@ -41,10 +41,9 @@ $(function() {
 
     $("#button").click(function() {
         $("#dropdown").slideToggle()
-
-        // $("body").toggle(function() {$("body").css("overflow","hidden")}, function() {$("body").css("overflow","auto")})
         $(this).find("img").toggle(100)
         $("#logo").find("img").toggle()
+
         $("#navbar h6").css("color", "white")
 
 
@@ -53,10 +52,15 @@ $(function() {
 
     })
 
+    });
 
 
 
 
 
 
-})
+
+
+
+
+

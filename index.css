@@ -52,10 +52,6 @@ body {
     overflow: auto;
 }
 
-.bottom {
-    border:1px solid;
-}
-
 .subarticles {
     border: 1px solid;
 }
@@ -64,8 +60,13 @@ body {
 .bottom div,
 .subarticles {
     margin: 0px auto;
+    /*width: 350px;*/
     margin-bottom: 15px;
 
+}
+
+.bottom #small {
+    
 }
 
 #large {
@@ -186,6 +187,10 @@ body {
     .top #large {
         margin-right: 15px;
     }
+    
+    .top #small {
+        width:350px;
+    }
 
     .top #large {
         width: 629px;
@@ -204,3 +209,4 @@ body {
 
 
 }
+
