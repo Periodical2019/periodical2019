@@ -26,8 +26,15 @@
     font-size: 80px;
     color: white;
 }
-  
 
+h3::after{
+  display: block;
+    content: '';
+    background-color: lightgray;
+    width: 200px;
+    height: 10px;
+    margin: 0 auto;
+}
 .home-inner {
     position: relative;
     min-height: 50vh;
@@ -111,6 +118,7 @@ img {
             </div>
         </div>
         <div class="caption center-block text-center">
+            <div class="vertical-bar"></div>
             <h3 class="landing-text">Title</h3>
             <h4 class="author" style="color:white;">By: First Last</h4>
         </div>
