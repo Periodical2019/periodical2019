@@ -6,7 +6,7 @@ $(function() {
 
     var w = $(window).width()
 
-    if (w > 901) {
+    if (w > 951) {
         console.log(w)
 
         $(".remove").prependTo(".bottom")
@@ -22,7 +22,7 @@ $(function() {
 
         w = $(window).width()
 
-        if (w > 901) {
+        if (w > 951) {
             console.log(w)
 
             $(".remove").prependTo(".bottom")
