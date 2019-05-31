@@ -41,27 +41,72 @@ body {
 /*CSS FOR FRONT PAGE*/
 
 .frontpage {
-    color: white;
+    color: black;
     width: 100%;
     background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/front.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 10px;
 }
 
-.top {
-
-    overflow: auto;
-}
-
 .subarticles {
-    border: 1px solid;
+    padding:10px;
+    color: white;
+    background-color: rgba(51, 51, 51, .8);
 }
+
+.subarticles div {
+    overflow:auto;
+    margin-bottom: 15px;
+}
+
+.subarticles h3 {
+    margin-bottom:15px;
+    font-family:moonbold;
+}
+.subarticles h4 {
+    font-family:moonreg;
+}
+.subarticles h5 {
+    letter-spacing: 5px;
+    font-family:moonlig;
+}
+
+.subarticles img {
+    margin-right:10px;
+    float:left;
+    width: 80px;
+}
+
+.frontpage #large,
+.frontpage #small {
+    position: relative;
+}
+
+.frontpage #title {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    background-color: rgba(242, 242, 242, .8);
+
+}
+
+.frontpage div h6 {
+    letter-spacing: 5px;
+    font-family: moonlig;
+}
+
+.frontpage div h1 {
+    font-family: moonbold;
+}
+
+
 
 .top div,
-.bottom div,
+.bottom #small,
 .subarticles {
     margin: 0px auto;
-    /*width: 350px;*/
     margin-bottom: 15px;
 
 }
@@ -82,6 +127,9 @@ body {
 }
 
 
+
+
+
 /*CSS FOR SECTIONS*/
 
 .sections h1 {
@@ -91,9 +139,9 @@ body {
 }
 
 .jumbotron h6 {
-   margin-top:15px;
-   text-align: center;
-   font-family:moonreg; 
+    margin-top: 15px;
+    text-align: center;
+    font-family: moonreg;
 }
 
 .jumbotron div[id] {
@@ -109,11 +157,11 @@ body {
 .jumbotron div[id] {
     height: auto;
     width: auto;
-    /*border: 1px solid red;*/
+
 }
 
-.jumbotron:last-child{
-    margin-bottom:0px;
+.jumbotron:last-child {
+    margin-bottom: 0px;
 }
 
 /*MEDIA QUERIES*/
@@ -122,8 +170,7 @@ body {
 
 @media(min-width:558px) and (max-width:768px) {
     .top div,
-    .bottom #small,
-    .subarticles {
+    .bottom #small, .subarticles {
         width: 500px;
     }
 
@@ -142,14 +189,18 @@ body {
     .bottom {
         width: 750px;
         margin: 0 auto;
-        border: 1px solid;
+
+    }
+    
+    .subarticles {
+        position:absolute;
     }
 
     .top #large {
         width: 750px;
     }
 
-    .top #small {
+    .top #small,.bottom #small,.subarticles {
         display: inline-block;
         width: 364px;
         height: 364px;
@@ -159,20 +210,12 @@ body {
         margin-right: 15px;
     }
 
-    .bottom #small,
-    .subarticles {
-        display: inline-block;
-        width: 364px;
-        height: 364px;
-    }
-
     .bottom #small {
         margin-right: 15px;
     }
 
     .jumbotron div[id] {
         width: 750px;
-        border: 1px solid red;
     }
 
 
@@ -201,10 +244,15 @@ body {
 /*+951px*/
 
 @media(min-width:951px) and (max-width:1100px) {
+    
+    .subarticles {
+        position:absolute;
+    }
+    
+    
     .top,
     .bottom {
         margin: 0 auto;
-        border: 1px solid;
         width: 880px;
     }
 
@@ -226,8 +274,7 @@ body {
         width: 350px;
     }
 
-    .bottom #small,
-    .subarticles {
+    .bottom #small, .subarticles {
         display: inline-block;
         width: 279.7px;
         height: 279.7px;
@@ -262,7 +309,6 @@ body {
     .top,
     .bottom {
         margin: 0 auto;
-        border: 1px solid;
         width: 1000px;
     }
 
@@ -284,9 +330,12 @@ body {
     .top #large {
         width: 600px;
     }
-
-    .bottom #small,
+    
     .subarticles {
+        position:absolute;
+    }
+
+    .bottom #small,.subarticles {
         display: inline-block;
         width: 319.7px;
         height: 319.7px;
