@@ -13,6 +13,8 @@ body {
     margin: 0px;
 }
 
+
+
 /*FONTS*/
 
 @font-face {
@@ -30,18 +32,45 @@ body {
     src: url("fonts/Moon2.0-Bold.otf")
 }
 
-/*CSS FOR NAVBAR*/
 
-#navbar {
-    position: relative;
-    background-color: #f2f2f2;
+
+
+/*CSS FOR FRONT PAGE*/
+
+.frontpage {
+    color: white;
     width: 100%;
-    height: 40px;
+    background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/front.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 10px;
+}
+
+/*MOBILE*/
+
+.top {
+
+    overflow: auto;
+}
+
+.subarticles {
+    border: 1px solid;
+}
+
+.top div,
+.bottom div,
+.subarticles {
+    margin: 0px auto;
+    /*width: 350px;*/
+    margin-bottom: 15px;
 
 }
 
-#button img {
-    width: 40px;
+.bottom #small {
+    
+}
+
+#large {
+    height: 400px;
 }
 
 #logo img {
@@ -56,29 +85,62 @@ body {
     z-index: 99;
 }
 
-#button {
-    z-index: 99;
-    vertical-align: middle;
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+#small,
+.subarticles {
+    height: 350px;
+}
+
+#large,
+#small {
+    background-color: rgba(51, 51, 51, .8);
 }
 
 #navbar img:nth-child(2) {
     display: none;
 }
 
-/*CSS FOR DROPDOWN*/
+/*558px to 768px */
 
-#dropdown {
-    position: fixed;
-    margin: 0px;
-    top: 0%;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding: 40px 40px 0px;
+@media(min-width:558px) and (max-width:768px) {
+    .top div,
+    .bottom #small,
+    .subarticles {
+        width: 500px;
+    }
+}
+
+@media(min-width:769px) and (max-width:950px) {
+    .top,
+    .bottom {
+        width: 750px;
+        margin: 0 auto;
+        border: 1px solid;
+    }
+
+    .top #large {
+        width: 750px;
+    }
+
+    .top #small {
+        display: inline-block;
+        width: 364px;
+        height: 360px;
+    }
+
+    .top #small:nth-child(2) {
+        margin-right: 15px;
+    }
+
+    .bottom #small,
+    .subarticles {
+        display: inline-block;
+        width: 364px;
+        height: 360px;
+    }
+
+    .bottom #small {
+        margin-right: 15px;
+    }
 }
 
 
@@ -89,32 +151,83 @@ body {
     font-size: 20px;
     color: white;
     font-family: moonlig;
-
 }
 
-#dropdown ul {
-    padding: 0px;
-    color: white;
-    list-style: none;
-    font-family: moonreg;
+/*+902px*/
 
+@media(min-width:951px) and (max-width:1100px) {
+    .top,
+    .bottom {
+        margin: 0 auto;
+        border: 1px solid;
+        width: 880px;
+    }
+
+    .top #large,
+    .top #small {
+        height: 400px;
+        display: inline-block;
+    }
+
+    .top #large {
+        margin-right: 15px;
+    }
+
+    .top #large {
+        width: 508px;
+    }
+
+    .bottom #small,
+    .subarticles {
+        display: inline-block;
+        width: 279.7px;
+        height: 279.7px;
+    }
+
+    .bottom #small {
+        margin-right: 15px;
+    }
 }
 
-#dropdown li {
-    padding: 10px;
-    position: relative;
-    top: 50%;
-    margin-bottom: 15px;
-    font-size: 23px;
-}
 /*Media Queries*/
 
-@media (min-width: 992px) {}
+@media(min-width:1101px) {
+    .top,
+    .bottom {
+        margin: 0 auto;
+        border: 1px solid;
+        width: 1000px;
+    }
 
-@media (min-width: 768px) {}
+    .top #large,
+    .top #small {
+        height: 400px;
+        display: inline-block;
+    }
 
-@media (min-width: 568px) {}
+    .top #large {
+        margin-right: 15px;
+    }
+    
+    .top #small {
+        width:350px;
+    }
 
-/*Mobile First Design*/
+    .top #large {
+        width: 629px;
+    }
+
+    .bottom #small,
+    .subarticles {
+        display: inline-block;
+        width: 320px;
+        height: 320px;
+    }
+
+    .bottom #small {
+        margin-right: 15px;
+    }
+}
+
 
 @media (max-width: 568px) {}
