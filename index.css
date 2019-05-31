@@ -13,6 +13,11 @@ body {
     margin: 0px;
 }
 
+body {
+    background-color: white;
+}
+
+
 /*FONTS*/
 
 @font-face {
@@ -30,96 +35,322 @@ body {
     src: url("fonts/Moon2.0-Bold.otf")
 }
 
-/*CSS FOR NAVBAR*/
 
-#navbar {
-    position: relative;
-    background-color: #f2f2f2;
+/*CSS FOR FRONT PAGE*/
+
+.frontpage {
+    color: black;
     width: 100%;
-    height: 40px;
-
-}
-
-#button img {
-    width: 40px;
-}
-
-#logo img {
-
-    position: absolute;
-    width: 100px;
-    top: -150%;
-    left: 50%;
-    transform: translate(-50%, 30%);
-}
-
-#logo img:nth-child(2) {
-    z-index: 99;
-}
-
-#button {
-    z-index: 99;
-    vertical-align: middle;
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#navbar img:nth-child(2) {
-
-    display: none;
-}
-
-/*CSS FOR DROPDOWN*/
-
-#dropdown {
-    position: fixed;
-    margin: 0px;
-    top: 0%;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding: 40px 40px 0px;
-    z-index: 98;
-}
-
-
-#dropdown h2 {
-
-    letter-spacing: 6px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: white;
-    font-family: moonlig;
-
-}
-
-#dropdown ul {
-    padding: 0px;
-    color: white;
-    list-style: none;
-    font-family: moonreg;
-
-}
-
-#dropdown li {
+    background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/front.jpg) no-repeat center center fixed;
+    background-size: cover;
     padding: 10px;
-    position: relative;
-    top: 50%;
-    margin-bottom: 15px;
-    font-size: 23px;
 }
 
-/*Media Queries*/
+.subarticles {
+    padding: 10px;
+    color: white;
+    background-color: rgba(51, 51, 51, .8);
+}
 
-@media (min-width: 992px) {}
+.subarticles div {
+    overflow: auto;
+    margin-bottom: 15px;
+}
 
-@media (min-width: 768px) {}
+.subarticles h3 {
+    margin-bottom: 15px;
+    font-family: moonbold;
+}
 
-@media (min-width: 568px) {}
+.subarticles h4 {
+    font-family: moonreg;
+}
 
-/*Mobile First Design*/
+.subarticles h5 {
+    letter-spacing: 5px;
+    font-family: moonlig;
+}
 
-@media (max-width: 568px) {}
+.subarticles img {
+    margin-right: 10px;
+    float: left;
+    width: 80px;
+}
+
+.frontpage #large,
+.frontpage #small {
+    position: relative;
+}
+
+.frontpage #title {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    background-color: rgba(242, 242, 242, .8);
+
+}
+
+.frontpage div h6 {
+    letter-spacing: 5px;
+    font-family: moonlig;
+}
+
+.frontpage div h1 {
+    font-family: moonbold;
+}
+
+
+.top div,
+.bottom #small,
+.subarticles {
+    margin: 0px auto;
+    margin-bottom: 15px;
+
+}
+
+#large {
+    height: 400px;
+}
+
+#small,
+.subarticles {
+    height: 350px;
+}
+
+#large,
+#small {
+    background-color: rgba(51, 51, 51, .8);
+}
+
+
+/*CSS FOR SECTIONS*/
+
+.sections h1 {
+    font-family: moonbold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.jumbotron h6 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: moonreg;
+}
+
+.jumbotron div[id] {
+    margin: 0px auto;
+}
+
+.jumbotron div[id] div {
+    border: 1px solid;
+    height: 350px;
+    margin: 0px auto 15px;
+}
+
+.jumbotron div[id] {
+    height: auto;
+    width: auto;
+}
+
+.jumbotron:last-child {
+    margin-bottom: 0px;
+}
+
+/*MEDIA QUERIES*/
+
+/*558px to 768px */
+
+@media(min-width:558px) and (max-width:768px) {
+    .top div,
+    .bottom #small,
+    .subarticles {
+        width: 500px;
+    }
+
+    .jumbotron div[id] div {
+        width: 500px;
+
+    }
+
+}
+
+
+/*769px to 950px*/
+
+@media(min-width:769px) and (max-width:950px) {
+    .top,
+    .bottom {
+        width: 750px;
+        margin: 0 auto;
+
+    }
+
+    .subarticles {
+        position: absolute;
+    }
+
+    .top #large {
+        width: 750px;
+    }
+
+    .top #small,
+    .bottom #small,
+    .subarticles {
+        display: inline-block;
+        width: 364px;
+        height: 364px;
+    }
+
+    .top #small:nth-child(2) {
+        margin-right: 15px;
+    }
+
+    .bottom #small {
+        margin-right: 15px;
+    }
+
+    .jumbotron div[id] {
+        width: 750px;
+    }
+
+    .jumbotron div[id] div {
+        width: 236px;
+        height: 236px;
+        display: inline-block;
+        margin: 0px auto;
+    }
+
+    .jumbotron div[id] div:nth-child(1),
+    .jumbotron div[id] div:nth-child(2) {
+        margin-right: 15px;
+    }
+
+}
+
+/*+951px*/
+
+@media(min-width:951px) and (max-width:1100px) {
+
+    .subarticles {
+        position: absolute;
+    }
+
+
+    .top,
+    .bottom {
+        margin: 0 auto;
+        width: 880px;
+    }
+
+    .top #large,
+    .top #small {
+        height: 400px;
+        display: inline-block;
+    }
+
+    .top #large {
+        margin-right: 15px;
+    }
+
+    .top #large {
+        width: 508px;
+    }
+
+    .top #small {
+        width: 350px;
+    }
+
+    .bottom #small,
+    .subarticles {
+        display: inline-block;
+        width: 279.7px;
+        height: 279.7px;
+    }
+
+    .bottom #small {
+        margin-right: 15px;
+    }
+
+    .jumbotron div[id] {
+        width: 880px;
+    }
+
+    .jumbotron div[id] div {
+        width: 279.7px;
+        height: 279.7px;
+        display: inline-block;
+        margin: 0px auto;
+
+    }
+
+    .jumbotron div[id] div:nth-child(1),
+    .jumbotron div[id] div:nth-child(2) {
+        margin-right: 15px;
+    }
+
+
+
+}
+
+@media(min-width:1101px) {
+    .top,
+    .bottom {
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    .top #large,
+    .top #small {
+        display: inline-block;
+        height: 400px;
+        /*display: inline-block;*/
+    }
+
+    .top #large {
+        margin-right: 15px;
+    }
+
+    .top #small {
+        width: 378px;
+    }
+
+    .top #large {
+        width: 600px;
+    }
+
+    .subarticles {
+        position: absolute;
+    }
+
+    .bottom #small,
+    .subarticles {
+        display: inline-block;
+        width: 319.7px;
+        height: 319.7px;
+    }
+
+    .bottom #small {
+        margin-right: 15px;
+    }
+
+    .jumbotron div[id] {
+        width: 1000px;
+    }
+
+    .jumbotron div[id] div {
+        width: 319.7px;
+        height: 319.7px;
+        display: inline-block;
+        margin: 0px auto;
+
+    }
+
+    .jumbotron div[id] div:nth-child(1),
+    .jumbotron div[id] div:nth-child(2) {
+        margin-right: 15px;
+    }
+
+
+}
