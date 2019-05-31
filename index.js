@@ -1,6 +1,4 @@
 $(function() {
-
-
     $("#dropdown").css("display", "none")
 
 

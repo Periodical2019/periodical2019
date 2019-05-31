@@ -114,6 +114,18 @@ body {
     height: 400px;
 }
 
+#logo img {
+    position: absolute;
+    width: 100px;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+
+#logo img:nth-child(2) {
+    z-index: 99;
+}
+
 #small,
 .subarticles {
     height: 350px;
@@ -122,6 +134,10 @@ body {
 #large,
 #small {
     background-color: rgba(51, 51, 51, .8);
+}
+
+#navbar img:nth-child(2) {
+    display: none;
 }
 
 
@@ -214,8 +230,8 @@ body {
     .jumbotron div[id] {
         width: 750px;
     }
-
-    .jumbotron div[id] div {
+    
+     .jumbotron div[id] div {
         width: 236px;
         height: 236px;
         display: inline-block;
@@ -226,8 +242,17 @@ body {
     .jumbotron div[id] div:nth-child(2) {
         margin-right: 15px;
     }
-
 }
+
+#dropdown h2 {
+    letter-spacing: 6px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: moonlig;
+}
+   
 
 /*+951px*/
 
@@ -272,7 +297,7 @@ body {
     .bottom #small {
         margin-right: 15px;
     }
-
+    
     .jumbotron div[id] {
         width: 880px;
     }
@@ -289,10 +314,9 @@ body {
     .jumbotron div[id] div:nth-child(2) {
         margin-right: 15px;
     }
-
-
-
 }
+
+/*Media Queries*/
 
 @media(min-width:1101px) {
     .top,
@@ -334,6 +358,9 @@ body {
     .bottom #small {
         margin-right: 15px;
     }
+}
+
+@media (max-width: 568px) {
 
     .jumbotron div[id] {
         width: 1000px;
@@ -351,6 +378,4 @@ body {
     .jumbotron div[id] div:nth-child(2) {
         margin-right: 15px;
     }
-
-
 }
