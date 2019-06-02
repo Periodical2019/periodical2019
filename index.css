@@ -383,7 +383,7 @@ body {
 #probland h1 {
     text-align: center;
     font-family: moonbold;
-    font-size: 60px;
+    font-size: 100px;
     color: white;
       vertical-align: middle; /* only works with a display of table-cell which makes the text centered vertically*/
       display: table-cell; /* must have a parent with a display of table */
