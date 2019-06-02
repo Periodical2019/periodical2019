@@ -380,15 +380,27 @@ body {
     }
 }
 
-.section {
+#probland h1 {
     text-align: center;
     font-family: moonbold;
+    font-size: 60px;
+    color: white;
+      vertical-align: middle; /* only works with a display of table-cell which makes the text centered vertically*/
+      display: table-cell; /* must have a parent with a display of table */
+      color: white;
 }
 
 #probland {
-    background: linear-gradient(rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.1)),
-    url('img/land.jpg') no-repeat center;
-    width: 100%;
-    height: 100%;
+    display: table;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.1)
+      ),
+        url('images/land.jpg') no-repeat center;
+      background-size: cover;
 }
+
+
+
