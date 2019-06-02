@@ -176,8 +176,27 @@ body {
 
 /*MEDIA QUERIES*/
 
-/*558px to 768px */
+/*xs to 568px*/
+@media (max-width: 568px) {
+    .jumbotron div[id] {
+        width: 350px;
+    }
 
+    .jumbotron div[id] div {
+        width: 350px;
+        height: 350px;
+        display: inline-block;
+        margin: 0px auto;
+
+    }
+
+    .jumbotron div[id] div:nth-child(1),
+    .jumbotron div[id] div:nth-child(2) {
+        margin-right: 15px;
+    }
+}
+
+/*558px to 768px */
 @media(min-width:558px) and (max-width:768px) {
     .top div,
     .bottom #small,
@@ -356,26 +375,6 @@ body {
     }
 
     .bottom #small {
-        margin-right: 15px;
-    }
-}
-
-@media (max-width: 568px) {
-
-    .jumbotron div[id] {
-        width: 1000px;
-    }
-
-    .jumbotron div[id] div {
-        width: 319.7px;
-        height: 319.7px;
-        display: inline-block;
-        margin: 0px auto;
-
-    }
-
-    .jumbotron div[id] div:nth-child(1),
-    .jumbotron div[id] div:nth-child(2) {
         margin-right: 15px;
     }
 }
