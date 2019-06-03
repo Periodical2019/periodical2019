@@ -157,17 +157,14 @@ body {
 
 .jumbotron div[id] {
     margin: 0px auto;
+    height: auto;
+    width: auto;
 }
 
 .jumbotron div[id] div {
     border: 1px solid;
     height: 350px;
     margin: 0px auto 15px;
-}
-
-.jumbotron div[id] {
-    height: auto;
-    width: auto;
 }
 
 .jumbotron:last-child {
@@ -197,7 +194,7 @@ body {
 }
 
 /*558px to 768px */
-@media(min-width:558px) and (max-width:768px) {
+@media(min-width:558px) and (max-width:769px) {
     .top div,
     .bottom #small,
     .subarticles {
@@ -206,9 +203,7 @@ body {
 
     .jumbotron div[id] div {
         width: 500px;
-
     }
-
 }
 
 
@@ -251,8 +246,8 @@ body {
     }
     
      .jumbotron div[id] div {
-        width: 236px;
-        height: 236px;
+        width: 230px;
+        height: 230px;
         display: inline-block;
         margin: 0px auto;
     }
@@ -276,11 +271,9 @@ body {
 /*+951px*/
 
 @media(min-width:951px) and (max-width:1100px) {
-
     .subarticles {
         position: absolute;
     }
-
 
     .top,
     .bottom {
@@ -353,14 +346,11 @@ body {
 
     .top #large {
         margin-right: 15px;
+        width: 600px;
     }
 
     .top #small {
         width: 378px;
-    }
-
-    .top #large {
-        width: 600px;
     }
 
     .subarticles {
