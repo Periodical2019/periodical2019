@@ -1,0 +1,95 @@
+@media(min-width:650px) and (max-width:800px) {
+    .top,
+    .bottom {
+        width: 630px;
+    }
+
+    #large {
+        width: 630px;
+    }
+
+    #small,
+    .sub,
+    .remove {
+        display: inline-block;
+        width: 300px;
+
+    }
+
+    .remove {
+        margin-left: 25px;
+
+    }
+
+    .sub {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width:800px) and (max-width:970px) {
+
+    .top,
+    .bottom {
+        width: 780px;
+    }
+
+    #large {
+        width: 780px;
+    }
+
+    #small,
+    .sub {
+        display: inline-block;
+        width: 375px;
+    }
+
+    .remove {
+        margin-left: 25px;
+    }
+
+    .sub {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width:971px) and (max-width:1050px) {
+    .top,
+    .bottom {
+        width: 951px;
+    }
+
+    #large {
+        width: 951px;
+    }
+
+    #small {
+        display: inline-block;
+        width: 300px;
+    }
+
+    .remove {
+        margin-right: 23px;
+        margin-left: 23px;
+    }
+}
+
+@media(min-width:1051px) {
+    .top,
+    .bottom {
+        width: 1031px;
+    }
+
+    #large {
+        width: 1031px;
+    }
+
+    #small {
+        display: inline-block;
+        width: 326.5px;
+    }
+
+    .remove {
+        margin-right: 23px;
+        margin-left: 23px;
+    }
+}
