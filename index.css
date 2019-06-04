@@ -157,6 +157,8 @@ body {
 
 .jumbotron div[id] {
     margin: 0px auto;
+    height: auto;
+    width: auto;
 }
 
 .jumbotron div[id] div {
@@ -165,20 +167,34 @@ body {
     margin: 0px auto 15px;
 }
 
-.jumbotron div[id] {
-    height: auto;
-    width: auto;
-}
-
 .jumbotron:last-child {
     margin-bottom: 0px;
 }
 
 /*MEDIA QUERIES*/
 
-/*558px to 768px */
+/*xs to 568px*/
+@media (max-width: 568px) {
+    .jumbotron div[id] {
+        width: 350px;
+    }
 
-@media(min-width:558px) and (max-width:768px) {
+    .jumbotron div[id] div {
+        width: 350px;
+        height: 350px;
+        display: inline-block;
+        margin: 0px auto;
+
+    }
+
+    .jumbotron div[id] div:nth-child(1),
+    .jumbotron div[id] div:nth-child(2) {
+        margin-right: 15px;
+    }
+}
+
+/*558px to 768px */
+@media(min-width:558px) and (max-width:769px) {
     .top div,
     .bottom #small,
     .subarticles {
@@ -187,9 +203,7 @@ body {
 
     .jumbotron div[id] div {
         width: 500px;
-
     }
-
 }
 
 
@@ -232,8 +246,8 @@ body {
     }
     
      .jumbotron div[id] div {
-        width: 236px;
-        height: 236px;
+        width: 230px;
+        height: 230px;
         display: inline-block;
         margin: 0px auto;
     }
@@ -257,11 +271,9 @@ body {
 /*+951px*/
 
 @media(min-width:951px) and (max-width:1100px) {
-
     .subarticles {
         position: absolute;
     }
-
 
     .top,
     .bottom {
@@ -334,14 +346,11 @@ body {
 
     .top #large {
         margin-right: 15px;
+        width: 600px;
     }
 
     .top #small {
         width: 378px;
-    }
-
-    .top #large {
-        width: 600px;
     }
 
     .subarticles {
@@ -360,22 +369,27 @@ body {
     }
 }
 
-@media (max-width: 568px) {
-
-    .jumbotron div[id] {
-        width: 1000px;
-    }
-
-    .jumbotron div[id] div {
-        width: 319.7px;
-        height: 319.7px;
-        display: inline-block;
-        margin: 0px auto;
-
-    }
-
-    .jumbotron div[id] div:nth-child(1),
-    .jumbotron div[id] div:nth-child(2) {
-        margin-right: 15px;
-    }
+#probland h1 {
+    text-align: center;
+    font-family: moonbold;
+    font-size: 100px;
+    color: white;
+      vertical-align: middle; /* only works with a display of table-cell which makes the text centered vertically*/
+      display: table-cell; /* must have a parent with a display of table */
+      color: white;
 }
+
+#probland {
+    display: table;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.1)
+      ),
+        url('images/land.jpg') no-repeat center;
+      background-size: cover;
+}
+
+
+
