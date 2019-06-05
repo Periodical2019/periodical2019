@@ -89,7 +89,7 @@ $(function() {
     var target;        //target selection-group
 
     function carouselCards() {
-        pic = '<img class="card-img-top" src="photos/' + name + '.jpg" width=100>';
+        pic = '<img class="card-img-top" src="../photos/' + name + '.jpg" width=100>';
         if (i > 0) {
             target.append(item + code1 + pic + code2 + colour + code3 + name + code4);
         }
