@@ -26,6 +26,7 @@
     <!-- Custom CSS Stylesheets -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="queries.css">
 
     <!-- JS -->
     <script src="index.js"></script>
@@ -53,13 +54,13 @@
     <div id="dropdown">
         <h2>TOPICS</h2>
         <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
+            <li><a href="#plastic">WHAT IS PLASTIC?</a></li>
+            <li><a href="#probland">THE PROBLEM ON LAND</a></li>
+            <li><a href="#probocean">THE PROBLEM IN THE OCEAN</a></li>
+            <li><a href="#done">WHAT HAS BEEN DONE ABOUT IT?</a></li>
+            <li><a href="could-do">WHAT COULD WE DO?</a></li>
             <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
+            <li><a href="about-us/about-us.html">ABOUT US</a></li>
         </ul>
     </div>
 
@@ -71,64 +72,76 @@
     <!--(START) HTML FOR MAIN PAGE-->
 
     <div class="frontpage">
-
         <div class="top">
+            <div id="large" class="irene">
 
-            <div id="large">
-                <div id="title">
-                    <h6>Topic</h6>
-                    <h1>LARGE ARTICLE</h1>
+                <div class="title">
+                    <h6>
+                        The Problem in the Ocean
+                    </h6>
+                    <h2>A Torn Family</h2>
                 </div>
 
             </div>
+            
+            <div id="small" class="melissa">
 
-            <div class="remove" id="small">
-                <div id="title">
-                    <h6>Topic</h6>
-                    <h1>SMALL ARTICLE</h1>
+                <div class="title">
+                    <h6>
+                        The Problem on Land
+                    </h6>
+                    <h2>The Fantastic Ten</h2>
                 </div>
-            </div>
-            <div id="small">
-                <div id="title">
-                    <h6>Topic</h6>
-                    <h1>SMALL ARTICLE</h1>
-                </div>
-            </div>
 
+
+            </div>
         </div>
 
         <div class="bottom">
+            <div class="remove jessica" id="small">
 
-            <div id="small">
-                <div id="title">
-                    <h6>Topic</h6>
-                    <h1>SMALL ARTICLE</h1>
+                <div class="title">
+                    <h6>
+                        What has been done about it?
+                    </h6>
+                    <h2>Where does your recycling go?</h2>
+                </div>
+
+            </div>
+            <div class="sub">
+                <h2>Subarticles</h2>
+
+                <div class="mini">
+                    <img src="images/ph.png"></img>
+                    <h6>What has been done about it?</h6>
+                    <h5>Savior of the Ocean</h5>
+                </div>
+
+                <div class="mini">
+                    <img src="images/ph.png"></img>
+                    <h6>The Problem in the Ocean</h6>
+                    <h5>The Dangers That Lie Within Plastic</h5>
+                </div>
+
+                <div class="mini">
+                    <img src="images/ph.png"></img>
+                    <h6>The Problem on Land</h6>
+                    <h5>Plastic pollution on humans</h5>
+                </div>
+
+
+
+            </div>
+            <div class="munisa remove2" id="small">
+                <div class="title">
+                    <h6>
+                        What could we do?
+                    </h6>
+                    <h2>Are schools neglecting plastic pollution?</h2>
                 </div>
             </div>
-
-            <div class="subarticles">
-                <h3>SUBARTICLES</h3>
-
-                <div>
-                    <img src="images/ph.png"></img>
-                    <h5>Topic</h5>
-                    <h4>Subarticle</h4>
-                </div>
-
-                <div>
-                    <img src="images/ph.png"></img>
-                    <h5>Topic</h5>
-                    <h4>Subarticle</h4>
-
-                </div>
-            </div>
-
-
-
         </div>
 
-
-    </div>
 
 
 
@@ -146,7 +159,7 @@
     <!--(START) HTML FOR TOPICS-->
 
     <div class="sections">
-        <div class="jumbotron">
+        <div id="plastic" class="jumbotron">
             <h1>What is Plastic?</h1>
 
             <div id="what">
@@ -157,7 +170,7 @@
 
         </div>
 
-        <div class="jumbotron">
+        <div id="probland" class="jumbotron">
             <h1>The Problem on Land</h1>
 
             <div id="land">
@@ -170,7 +183,7 @@
 
         </div>
 
-        <div class="jumbotron">
+        <div id="probocean" class="jumbotron">
             <h1>The Problem on the Ocean</h1>
 
             <div id="ocean">
@@ -183,7 +196,7 @@
 
         </div>
 
-        <div class="jumbotron">
+        <div id="done" class="jumbotron">
             <h1>What Has Been Done About It?</h1>
 
             <div id="past_actions">
@@ -196,7 +209,7 @@
 
         </div>
 
-        <div class="jumbotron">
+        <div id="could-do" class="jumbotron">
             <h1>What Could We Do?</h1>
 
             <div id="current_actions">

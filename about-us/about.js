@@ -18,7 +18,7 @@ $(function() {
     $('.eprev').click(function() { $('#edit').carousel('prev'); return false; });
 
     $('.carousel').carousel({
-        interval: 4000
+        interval: 4500
     });
 
     var name = "";
@@ -83,26 +83,20 @@ $(function() {
     const code1 = '<div class="card" style="width: 100%;"><div class="card-header">';
     var pic;
     const code2 = '</div><div class="card-body" style="text-align:center; background-color:';
-    var colour = "lightcoral";
+    var colour = "lightblue";
     const code3 = '"><p class="list-group-item"><a href="#" class="card-link">';
     const code4 = '</a></p></div></div></div>';
     var target;        //target selection-group
 
     function carouselCards() {
-        pic = '<img class="card-img-top" src="photos/' + name + '.jpg" width=100>';
+        pic = '<img class="card-img-top" src="../photos/' + name + '.jpg" width=100>';
         if (i > 0) {
             target.append(item + code1 + pic + code2 + colour + code3 + name + code4);
         }
         else {
-            colour = "lightcoral"; //resets color as well
             target.append(active + code1 + pic + code2 + colour + code3 + name + code4);
         }
-        if (colour == "lightcoral") {
-            colour = "lightblue";
-        }
-        else {
-            colour = "lightcoral";
-        }
+        
     }
 
     for (i = 0; i < designers.length; i++) {

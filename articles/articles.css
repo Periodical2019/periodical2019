@@ -224,7 +224,8 @@ img {
 .img2{
     min-width: auto;
     min-height: 100%;
-    object-fit: cover;
+    object-fi
+    t: cover;
     
 }
 .breakbar{
