@@ -1,19 +1,24 @@
 $(function() {
-
-
     $("#dropdown").css("display", "none")
 
 
     var w = $(window).width()
 
-    if (w > 951) {
+    if (w > 649) {
         console.log(w)
 
-        $(".remove").prependTo(".bottom")
+        $(".remove").appendTo(".top")
     }
     else {
         console.log(w)
-        $(".remove").appendTo(".top")
+        $(".remove").prependTo(".bottom")
+    }
+
+    if (w > 970) {
+        $(".remove2").appendTo(".top")
+    }
+    else {
+        $(".remove2").prependTo(".bottom")
     }
 
 
@@ -22,14 +27,21 @@ $(function() {
 
         w = $(window).width()
 
-        if (w > 951) {
+        if (w > 649) {
             console.log(w)
 
-            $(".remove").prependTo(".bottom")
+            $(".remove").appendTo(".top")
         }
         else {
             console.log(w)
-            $(".remove").appendTo(".top")
+            $(".remove").prependTo(".bottom")
+        }
+
+        if (w > 970) {
+            $(".remove2").appendTo(".top")
+        }
+        else {
+            $(".remove2").prependTo(".bottom")
         }
 
     });
@@ -52,15 +64,4 @@ $(function() {
 
     })
 
-    });
-
-
-
-
-
-
-
-
-
-
-
+});

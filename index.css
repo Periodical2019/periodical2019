@@ -46,311 +46,131 @@ body {
     padding: 10px;
 }
 
-.subarticles {
-    padding: 10px;
-    color: white;
-    background-color: rgba(51, 51, 51, .8);
-}
-
-.subarticles div {
-    overflow: auto;
-    margin-bottom: 15px;
-}
-
-.subarticles h3 {
-    margin-bottom: 15px;
+h2, h5 {
     font-family: moonbold;
 }
 
-.subarticles h4 {
+h6 { 
     font-family: moonreg;
 }
 
-.subarticles h5 {
-    letter-spacing: 5px;
-    font-family: moonlig;
-}
-
-.subarticles img {
-    margin-right: 10px;
-    float: left;
-    width: 80px;
-}
-
-.frontpage #large,
-.frontpage #small {
-    position: relative;
-}
-
-.frontpage #title {
+.title {
     padding: 10px;
     position: absolute;
     width: 100%;
     bottom: 0px;
     margin: 0px;
-    background-color: rgba(242, 242, 242, .8);
-
+    background-color: rgba(242, 242, 242);
 }
 
-.frontpage div h6 {
-    letter-spacing: 5px;
-    font-family: moonlig;
+.title h2,
+.title h6 {
+    margin: 0px;
 }
 
-.frontpage div h1 {
+.title h2 {
     font-family: moonbold;
+    font-size: 30px;
 }
 
+.title h6 {
+    font-family: moonreg;
+    font-size: 14px;
+}
 
-.top div,
+.top #large,
+.top #small,
 .bottom #small,
-.subarticles {
-    margin: 0px auto;
-    margin-bottom: 15px;
-
+.sub {
+    border: 1px solid;
+    position: relative;
+    vertical-align: top;
+    height: 350px;
+    margin-bottom: 20px
 }
 
-#large {
+.sub {
+    border:1px solid  rgba(242, 242, 242,.1) !important;
+    padding:5px;
+    border: none;
+    color: white;
+}
+
+
+.top #large {
     height: 400px;
 }
 
-#small,
-.subarticles {
-    height: 350px;
-}
-
-#large,
-#small {
-    background-color: rgba(51, 51, 51, .8);
-}
 
 
-/*CSS FOR SECTIONS*/
-
-.sections h1 {
-    font-family: moonbold;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.jumbotron h6 {
-    margin-top: 15px;
-    text-align: center;
-    font-family: moonreg;
-}
-
-.jumbotron div[id] {
+.bottom,
+.top {
     margin: 0px auto;
 }
 
-.jumbotron div[id] div {
-    border: 1px solid;
-    height: 350px;
-    margin: 0px auto 15px;
+.mini {
+    color: white;
+    margin-bottom: 20px;
+    overflow: auto;
 }
 
-.jumbotron div[id] {
-    height: auto;
-    width: auto;
+.sub h2 {
+    font-family: moonreg;
+    margin-bottom:15px;
 }
 
-.jumbotron:last-child {
-    margin-bottom: 0px;
-}
-
-/*MEDIA QUERIES*/
-
-/*558px to 768px */
-
-@media(min-width:558px) and (max-width:768px) {
-    .top div,
-    .bottom #small,
-    .subarticles {
-        width: 500px;
-    }
-
-    .jumbotron div[id] div {
-        width: 500px;
-
-    }
-
+.mini img {
+    float: left;
+    margin-right: 10px;
+    width: 75px;
+    height: 75px;
 }
 
 
-/*769px to 950px*/
+/*CSS FOR BACKGROUNDS*/
 
-@media(min-width:769px) and (max-width:950px) {
-    .top,
-    .bottom {
-        width: 750px;
-        margin: 0 auto;
-
-    }
-
-    .subarticles {
-        position: absolute;
-    }
-
-    .top #large {
-        width: 750px;
-    }
-
-    .top #small,
-    .bottom #small,
-    .subarticles {
-        display: inline-block;
-        width: 364px;
-        height: 364px;
-    }
-
-    .top #small:nth-child(2) {
-        margin-right: 15px;
-    }
-
-    .bottom #small {
-        margin-right: 15px;
-    }
-
-    .jumbotron div[id] {
-        width: 750px;
-    }
-
-    .jumbotron div[id] div {
-        width: 236px;
-        height: 236px;
-        display: inline-block;
-        margin: 0px auto;
-    }
-
-    .jumbotron div[id] div:nth-child(1),
-    .jumbotron div[id] div:nth-child(2) {
-        margin-right: 15px;
-    }
-
+.irene {
+    background: url("images/irene-w.jpeg") no-repeat center center;
+    background-size: cover;
 }
 
-/*+951px*/
-
-@media(min-width:951px) and (max-width:1100px) {
-
-    .subarticles {
-        position: absolute;
-    }
-
-
-    .top,
-    .bottom {
-        margin: 0 auto;
-        width: 880px;
-    }
-
-    .top #large,
-    .top #small {
-        height: 400px;
-        display: inline-block;
-    }
-
-    .top #large {
-        margin-right: 15px;
-    }
-
-    .top #large {
-        width: 508px;
-    }
-
-    .top #small {
-        width: 350px;
-    }
-
-    .bottom #small,
-    .subarticles {
-        display: inline-block;
-        width: 279.7px;
-        height: 279.7px;
-    }
-
-    .bottom #small {
-        margin-right: 15px;
-    }
-
-    .jumbotron div[id] {
-        width: 880px;
-    }
-
-    .jumbotron div[id] div {
-        width: 279.7px;
-        height: 279.7px;
-        display: inline-block;
-        margin: 0px auto;
-
-    }
-
-    .jumbotron div[id] div:nth-child(1),
-    .jumbotron div[id] div:nth-child(2) {
-        margin-right: 15px;
-    }
-
-
-
+.melissa {
+    background: url("images/melissa-t.jpg") no-repeat center center;
+    background-size: cover;
 }
 
-@media(min-width:1101px) {
-    .top,
-    .bottom {
-        margin: 0 auto;
-        width: 1000px;
-    }
+.munisa {
+    background: url("images/munisa-t.jpg") no-repeat center center;
+    background-size: cover;
+}
 
-    .top #large,
-    .top #small {
-        display: inline-block;
-        height: 400px;
-        /*display: inline-block;*/
-    }
-
-    .top #large {
-        margin-right: 15px;
-    }
-
-    .top #small {
-        width: 378px;
-    }
-
-    .top #large {
-        width: 600px;
-    }
-
-    .subarticles {
-        position: absolute;
-    }
-
-    .bottom #small,
-    .subarticles {
-        display: inline-block;
-        width: 319.7px;
-        height: 319.7px;
-    }
-
-    .bottom #small {
-        margin-right: 15px;
-    }
-
-    .jumbotron div[id] {
-        width: 1000px;
-    }
-
-    .jumbotron div[id] div {
-        width: 319.7px;
-        height: 319.7px;
-        display: inline-block;
-        margin: 0px auto;
-
-    }
-
-    .jumbotron div[id] div:nth-child(1),
-    .jumbotron div[id] div:nth-child(2) {
-        margin-right: 15px;
-    }
+.jessica {
+    background: url("images/jessica-t.jpg") no-repeat center center;
+    background-size: cover;
+}
 
 
+
+/*CSS FOR SECTION PAGES*/
+
+#probland h1 {
+    text-align: center;
+    font-family: moonbold;
+    font-size: 60px;
+    color: white;
+    vertical-align: middle;
+    /* only works with a display of table-cell which makes the text centered vertically*/
+    display: table-cell;
+    /* must have a parent with a display of table */
+    color: white;
+}
+
+#probland {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.1)),
+    url('images/land.jpg') no-repeat center;
+    background-size: cover;
 }
