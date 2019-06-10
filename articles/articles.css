@@ -160,6 +160,7 @@ h3::after{
     width: 200px;
     height: 10px;
     margin: 0 auto;
+    margin-top:10px;
 }
 .home-inner {
     position: relative;
