@@ -2,83 +2,139 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>periodical2019</title>
+  <meta charset="UTF-8">
+  <title>title</title>
 
-    <!-- Latest compiled and minified CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript 4.3.1 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .caption {
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 10%;
+      z-index: 2;
+      margin-top: 1em;
+    }
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+    .landing-text {
+      font-size: 80px;
+      color: white;
+    }
 
-    <!--External Third party Js-->
-    <!--Math Equation JS [if applicable]-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    h3::after {
+      display: block;
+      content: '';
+      background-color: lightgray;
+      width: 200px;
+      height: 10px;
+      margin: 0 auto;
+    }
 
-    <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="articles.css">
+    .home-inner {
+      position: relative;
+      min-height: 50vh;
+      background-size: cover;
+      background-position: center;
+      padding: 0px 0 00px;
+      filter: blur(3px);
+      z-index: 1;
+    }
 
-    <!-- JS -->
-    <script src="../index.js"></script>
 
-    <!--Google Fonts-->
+    section {
+      padding-top: 0%;
+    }
 
+    .title-wrapper {
+      height: 10vh;
+      width: 100%;
+      padding: 20;
+      text-align: center;
+      margin-bottom: 50px;
+
+    }
+
+    [class*="col-"] {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      /*background-color: #eee;*/
+      /*background-color: rgba(86, 61, 124, .15);*/
+      /*border: 1px solid #ddd;*/
+      /*border: 1px solid rgba(86, 61, 124, .2);*/
+    }
+
+    .col-10 {
+      width: 100%;
+      background-color: white;
+    }
+
+    .title {
+      font-size: 50px;
+      color: white;
+      background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+      background-image: url(plastic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+
+    .text-align-center {
+      text-align: center;
+    }
+
+    .byline {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .article {
+      font-size: 20px;
+      padding: 3em;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .img2 {
+      min-width: auto;
+      min-height: 100%;
+      object-fit: cover;
+
+    }
+
+    .breakbar {
+      height: 5vh;
+      background-color: white;
+    }
+  </style>
 </head>
 
 <body>
-
-    <!--(START) HTML FOR NAVBAR / MENU-->
-
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/logo.png"></img>
-            <img src="../images/logo2.png"></img>
-        </div>
-
-        <div id="button">
-            <img src="../images/arrowdown.png"></img>
-            <img src="../images/arrowup.png"></img>
-        </div>
-
-    </div>
-
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
-    </div>
-
-    <!--(END) HTML FOR NAVBAR / MENU-->
-
-    <div id="home">
+  <div id="home">
     <!---Nav-->
-
     <!---Landing-->
     <div class="landing" id="home">
       <div class="home-wrap">
-        <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, .8), rgba(0, 0, 0, .1)), url('img/alex2.jpg') no-repeat center; background-size:cover">
+        <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, 0.8), rgba(0, 0, 0, 0.1)), url('../images/sections/alex.jpg') no-repeat center; background-size:cover">
         </div>
       </div>
     </div>
     <div class="caption center-block text-center">
-      <div class="vertical-bar"></div>
       <h3 class="landing-text">Swimming in Plastic</h3>
-      <h4 class="author" style="color:white;">By Alex Cosme</h4>
+      <a href="#intro" class="btn btn-outline-light btn-lg" href="#">By: Alex Cosme</a>
     </div>
   </div>
   <div class="breakbar"></div>
@@ -89,44 +145,53 @@
     <!--Content-->
 
     <div class="row justify-content-justify-content-center">
-      <div class="col-md-8 article">
-        THE WORLD HAS a plastic pollution problem that is snowballing. There is no doubt plastic is in our everyday lives from plastic bags, to straws, to spoons and forks, to water bottles, to almost anything. We need plastic or many of these products wouldn't be available, right? However, if I asked you do you know where all the plastic we use ends up in? Would you know the answer? You might first say, “plastic doesn't go anywhere because it's recycled”. That would be amazing and wonderful if it were true. The truth is less than a fifth of plastic is recycled. It makes matters worse when 40% of all plastic produced is used in packaging and much of that is only used once and then discarded. So if the plastic is not recycled then you might say, “Plastic is taken to a landfill”. Dumping millions and millions of tons into landfills is not a solution. Plastic may take up to 500 years to decompose in these landfills and plastic can potentially leak pollutants into the soil. So where does plastic really go? The majority of the plastic we use in our everyday lives ends up in the ocean. Each year, an estimated amount of 8 billion metric tons  of plastic waste enter the ocean. Plastic is not like salt, it is not SOLUBLE.
+      <div class="col-md-12 article">
+        THE WORLD HAS a plastic pollution problem that is snowballing. There is no doubt plastic is in our everyday lives from plastic bags, to straws, to spoons and forks, to water bottles, to almost anything. We need plastic or many of these products wouldn't
+        be available, right? However, if I asked you do you know where all the plastic we use ends up in? Would you know the answer? You might first say, “plastic doesn't go anywhere because it's recycled”. That would be amazing and wonderful if it were
+        true. The truth is less than a fifth of plastic is recycled. It makes matters worse when 40% of all plastic produced is used in packaging and much of that is only used once and then discarded. So if the plastic is not recycled then you might say,
+        “Plastic is taken to a landfill”. Dumping millions and millions of tons into landfills is not a solution. Plastic may take up to 500 years to decompose in these landfills and plastic can potentially leak pollutants into the soil. So where does
+        plastic really go? The majority of the plastic we use in our everyday lives ends up in the ocean. Each year, an estimated amount of 8 billion metric tons of plastic waste enter the ocean. Plastic is not like salt, it is not SOLUBLE.
       </div>
-      <div class="col-md-4 imgdiv">
-        <img class="img2" src="img/alex3.png">
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-10 offset-md-1 article">
+        <img src="../images/sections/alex1.png">
       </div>
-
     </div>
     <br><br>
     <div class="row justify-content-justify-content-center">
       <div class="col-md-12 article">
-        The chart above shows the number of plastic entered in the ocean caused by humans in a year. Looking at the graph, you may ask what is Metric tons? Or how much is metric tons? At the bottom, there is a comparison of  how much 8 billion metric tons is to things we are more familiar with. 
+        The chart above shows the number of plastic entered in the ocean caused by humans in a year. Looking at the graph, you may ask what is Metric tons? Or how much is metric tons? At the bottom, there is a comparison of how much 8 billion metric tons is to
+        things we are more familiar with.
       </div>
-
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-10 offset-md-1 article">
+        <img src="img/alex2.jpg">
+      </div>
+    </div>
+    <br><br>
+    <div class="row justify-content-justify-content-center">
       <div class="col-md-12 article">
         It's crazy to think how much plastic enters the ocean and you probably weren't aware of all the plastic. So now imagine all this plastic enters the ocean ONCE a year, how much plastic would there be in ten, twenty, or even fifty from now?
-        when something is recycled more instead of making more it helps create less harm to the environment such as carbon dioxide.
       </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-10 offset-md-1 article">
+        <img src="img/alex3.png">
+      </div>
+    </div>
+    <br><br>
+    <div class="row justify-content-justify-content-center">
       <div class="col-md-12 article">
-        This chart shows what is to come by 2050 if we continue with our carelessness about the ocean. It is predicted that by 2050 there would be an even ratio of fish to plastic or MORE plastic than fish in the ocean. That is depressing to hear and it's even more horrifying that it’s not far from being reality.
+        This chart shows what is to come by 2050 if we continue with our carelessness about the ocean. It is predicted that by 2050 there would be an even ratio of fish to plastic or MORE plastic than fish in the ocean. That is depressing to hear and it's even more horrifying that it’s not far from being reality. 
       </div>
     </div>
+    <br><br>
   </div>
-  <br><br>
-  <div class="row">
-    <div class="col-md-10 offset-md-1 article">
-      <img src="img/alex1.jpg">
-    </div>
-  </div>
-  <br><br>
-
-  <!-- Copy and paste the div below for additional paragraphs-->
-  <div class="row">
-    <div class="col-md-10 offset-md-1 article">
-
-    </div>
-  </div>
-  <!-- -->
 
 </body>
 
