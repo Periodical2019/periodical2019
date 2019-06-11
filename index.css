@@ -13,9 +13,6 @@ body {
     margin: 0px;
 }
 
-body {
-    background-color: white;
-}
 
 
 /*FONTS*/
@@ -44,6 +41,7 @@ body {
     background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/mainpage/front.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 10px;
+    padding-top: 60px;
 }
 
 h1,
@@ -155,29 +153,31 @@ h6 {
 
 /*CSS FOR SECTIONS*/
 
-.sections{
+.sections {
     text-align: center;
-    color: white;
     width: 100%;
-    background: linear-gradient(180deg, #000 0%, transparent 100%), url(images/mainpage/front2.png) no-repeat center center fixed;
     background-size: cover;
     padding: 10px;
 }
 
+.sections [id] h1 {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
 .sections [id] div {
-    
     position: relative;
     border: 1px solid black;
     height: 300px;
-    margin:0 auto 20px;
+    margin: 0 auto 20px;
     overflow: hidden;
 
 }
 
 .sections [id] img {
-   object-fit: cover;
-   width: 100%;
-   height:100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 #plastic,
@@ -189,8 +189,8 @@ h6 {
 }
 
 .subtitle {
-    color:black !important;
-    display:block !important;
+    color: black !important;
+    display: block !important;
     border: none !important;
     padding: 10px !important;
     position: absolute !important;
@@ -199,13 +199,34 @@ h6 {
     bottom: 0px !important;
     margin: 0px !important;
     background-color: rgba(242, 242, 242) !important;
+
 }
 
 .subtitle h1 {
-    font-size:25px;
+    font-size: 25px;
+    margin: 0px !important;
+    border: none !important;
 }
 
+a {
+    color:black !important;
+}
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 
 /*CSS FOR SECTION PAGES*/
