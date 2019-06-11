@@ -212,6 +212,10 @@ a {
     color:black !important;
 }
 
+.mini a {
+    color:white !important;
+}
+
 a:link {
   text-decoration: none;
 }
