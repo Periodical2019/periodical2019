@@ -79,13 +79,14 @@
     }
 
     #small {
+        
         display: inline-block;
         width: 300px;
     }
 
     .remove {
-        margin-right: 23px;
-        margin-left: 23px;
+        margin-right: 19px;
+        margin-left: 19px;
     }
     
     .sections [id] div {
@@ -101,6 +102,7 @@
     .top,
     .bottom {
         width: 1031px;
+
     }
 
     #large {
@@ -113,8 +115,8 @@
     }
 
     .remove {
-        margin-right: 23px;
-        margin-left: 23px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     
      .sections [id] div {
