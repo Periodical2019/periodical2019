@@ -15,6 +15,7 @@ body {
 
 
 
+
 /*FONTS*/
 
 @font-face {
@@ -212,7 +213,7 @@ a {
     color:black !important;
 }
 
-.mini a {
+.mini a{
     color:white !important;
 }
 

@@ -31,7 +31,7 @@
 
 .button {
     position: fixed !important;
-    left:90%;
+    right:0;
     height: 48px;
     z-index:100 !important;
     
@@ -58,7 +58,24 @@
     height: 100%;
     background-color: black;
     z-index: 1;
+    padding:50px;
+    color:white;
 }
+
+.dropmenu a {
+    font-family:moonbold;
+    color:white !important;
+}
+
+.dropmenu .items h2 {
+    margin-bottom:30px;
+}
+
+.dropmenu h5 {
+    font-family: moonlig;
+}
+
+
 
 
 
