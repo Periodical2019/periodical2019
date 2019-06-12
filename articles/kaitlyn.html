@@ -3,82 +3,138 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>periodical2019</title>
+    <title>title</title>
 
-    <!-- Latest compiled and minified CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript 4.3.1 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .caption {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            margin-top: 1em;
+        }
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+        .landing-text {
+            font-size: 70px;
+            color: white;
+        }
 
-    <!--External Third party Js-->
-    <!--Math Equation JS [if applicable]-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        h3::after {
+            display: block;
+            content: '';
+            background-color: lightgray;
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+        }
 
-    <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="articles.css">
+        .home-inner {
+            position: relative;
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0 00px;
+            filter: blur(3px);
+            z-index: 1;
+        }
 
-    <!-- JS -->
-    <script src="../index.js"></script>
 
-    <!--Google Fonts-->
+        section {
+            padding-top: 0%;
+        }
 
+        .title-wrapper {
+            height: 10vh;
+            width: 100%;
+            padding: 20;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid #ddd;*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+
+        .col-10 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .title {
+            font-size: 50px;
+            color: white;
+            background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+            background-image: url(plastic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .byline {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            font-size: 20px;
+            padding: 3em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            min-width: auto;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+        .breakbar {
+            height: 5vh;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-
-    <!--(START) HTML FOR NAVBAR / MENU-->
-
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/logo.png"></img>
-            <img src="../images/logo2.png"></img>
-        </div>
-
-        <div id="button">
-            <img src="../images/arrowdown.png"></img>
-            <img src="../images/arrowup.png"></img>
-        </div>
-
-    </div>
-
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
-    </div>
-
-    <!--(END) HTML FOR NAVBAR / MENU-->
-
     <div id="home">
         <!---Nav-->
-
         <!---Landing-->
         <div class="landing" id="home">
             <div class="home-wrap">
-                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, .8), rgba(0, 0, 0, .1)), url('plastic.jpg') no-repeat center; background-size:cover">
+                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, 0.8), rgba(0, 0, 0, 0.1)), url('../images/sections/kaitlyn1.jpg') no-repeat center; background-size:cover">
                 </div>
             </div>
         </div>
         <div class="caption center-block text-center">
-            <div class="vertical-bar"></div>
-            <h3 class="landing-text">Materials that save us!!!</h3>
-            <h4 class="author" style="color:white;">By Ming Chen</h4>
+            <h3 class="landing-text">Plastics and its Marine Life Destruction</h3>
+            <a href="#intro" class="btn btn-outline-light btn-lg" href="#">By: Kaitlyn Lee</a>
         </div>
     </div>
     <div class="breakbar"></div>
@@ -89,57 +145,69 @@
         <!--Content-->
 
         <div class="row justify-content-justify-content-center">
-            <div class="col-md-8 article">
-                Paragraph 1<br> In today’s world, people have been using a large amount of plastic. In fact, plastic has been used in almost everything and in an uncontrollably rate. Plastic is becoming a threat to us, animals, and our oceans. This leads
-                to researchers and scientists trying to find other materials to substitute plastic for our everyday usage.
-            </div>
-            <div class="col-md-4 imgdiv">
-                <img class="img2" src="plastic.jpg">
-            </div>
-
-        </div>
-        <br><br>
-        <div class="row justify-content-justify-content-center">
             <div class="col-md-12 article">
-                Paragraph 2<br> One of the substitute materials that is being used now is stone wool. This material is from natural igneous rock and it’s formed after lava cools. Then, this material is being combined with a steelmaking byproduct that’s
-                called a slag which becomes a fibre. The manufacture of stone wool is located in Europe, North America, and Asia. This material is being used in London and Hong Kong. One of the way that they use stone wool is by putting stone wool against
-                the wall when they build a house or a building. Using this material will not only help us get a solution to our plastic problem, but it also gives us benefits. By using this material instead of plastic it can help boast unique properties,
-                including fire resilience, acoustic and thermal capabilities, water repellency and durability in extreme weather conditions. Stone wool not only gives people those benefits, but it could also save their lives because stone wool gives extra
-                measure of safety when wildfire and floods increase in its frequency and severity. That’s because stone wool is fire resistant and that can slow down a spread of fire which can give people more time to escape when there’s a fire. Not only
-                it gives safety properties, but it also helps keep a house cooler because they have thermal properties from tiny pockets of air that keeps hot airs out. Also, stone wool contains 75 percent recycled content unlike plastic only gets 9 percent
-                of it recycled. This is important because when something is recycled more instead of making more it helps create less harm to the environment such as carbon dioxide.
+                Plastics that exist throughout the oceans tend to endanger marine creatures. For starters, 15-51 trillion pieces of plastics are dumped into the ocean every year. Statistics state that 40 percent of the ocean’s surface is made up of plastic. Whether it
+                be in the form of big plastic bags, or the size of a pebble, plastics had seemingly taken over major parts of the ocean. The tiny pieces of plastics that exist within ocean life would be ingested by many marine wildlife creatures that
+                mistaken them as food. The bigger pieces of plastic tend to entangle many ocean creatures, making it hard for them to maneuver. This can eventually lead to the suffocation of these living things. It should be noted that approximately 800
+                species tend to get affected through this issue. If this were to continue, no species on Earth would remain in existence.
             </div>
-
+            <br><br>
             <div class="col-md-12 article">
-                Paragraph 3<br> One of the substitute materials that is being used now is stone wool. This material is from natural igneous rock and it’s formed after lava cools. Then, this material is being combined with a steelmaking byproduct that’s
-                called a slag which becomes a fibre. The manufacture of stone wool is located in Europe, North America, and Asia. This material is being used in London and Hong Kong. One of the way that they use stone wool is by putting stone wool against
-                the wall when they build a house or a building. Using this material will not only help us get a solution to our plastic problem, but it also gives us benefits. By using this material instead of plastic it can help boast unique properties,
-                including fire resilience, acoustic and thermal capabilities, water repellency and durability in extreme weather conditions. Stone wool not only gives people those benefits, but it could also save their lives because stone wool gives extra
-                measure of safety when wildfire and floods increase in its frequency and severity. That’s because stone wool is fire resistant and that can slow down a spread of fire which can give people more time to escape when there’s a fire. Not only
-                it gives safety properties, but it also helps keep a house cooler because they have thermal properties from tiny pockets of air that keeps hot airs out. Also, stone wool contains 75 percent recycled content unlike plastic only gets 9 percent
-                of it recycled. This is important because when something is recycled more instead of making more it helps create less harm to the environment such as carbon dioxide.
+                There are so many types of plastics that get mistaken for food everywhere. This often occurs within small plastics that end up in the ocean. As a result, marine animals become full of these plastic products that tend to never break down easily. For instance,
+                a fish can get tangled up by a ribbon that had ended up in the ocean. The fish may suffocate, in which it would end up dying. Just like the fish, seals and sea lions would have pieces of plastic stuck onto their necks. Consequently, they
+                would have a hard time doing daily tasks. Scientists have conducted an eight year study in Southeastern Alaska and British Columbia on the sea animals that tend to be in danger. According to their research 388 sea lions were entangled
+                by plastic.
             </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-10 offset-md-1 article">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/kaitlyn3.jpg">
+                            <img src="img/kaitlyn4.jpeg">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/kaitlyn5.jpg">
+                            <img src="img/kaitlyn6.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
             <div class="col-md-12 article">
-                Paragraph 4<br> These are some of the materials that people could substitute plastic with and it’s really important to do so. This is connected to today’s world because right now people is still looking for materials to substitute plastic
-                with and at the same time to be beneficial for us as human beings and our planet. Perhaps if we can cut down the usage of plastic by half, then it would help us, ocean, animals, and the earth in dramatic amount. SAVE THE WORLD!!!
+                In addition, marine creatures always seem to be in danger of plastics, no matter the size. Even some of the largest sea turtles are tangled up by the massive amounts of plastics that exist within the oceans of the Earth. According to statistics, at least
+                1,000 turtles die due to the cause of being tangled up by plastic wastes. Even some of the smartest sea animals, like dolphins, mistaken plastic for food. On top of that, since plastic doesn’t technically decompose, they would stay in
+                the animal’s stomach until they die. The plastic would continue to accumulate in the animal’s stomach until the creature eventually dies of malnutrition. Scientists have concluded that plastic waste kills up to 1 million seabirds every
+                year. At least sixty percent of the seabird population have consumed some sort of plastic throughout their lifetime. If this trend continues further, ninety nine percent of the seabird population would die by the year 2050. Due to such
+                destruction of plastics in the ocean, many creatures have a hard time surviving through their days.
             </div>
-        </div>
-    </div>
-    <br><br>
-    <div class="row">
-        <div class="col-md-10 offset-md-1 article">
-            <img src="plastic.jpg">
-        </div>
-    </div>
-    <br><br>
+            <br><br>
+            <div class="col-md-12 article">
+                <h2 style="text-align: center;"><u>Alternatives Towards Saving Marine Life</u></h2> <br> While it is normal for humans to use many types of plastics on the daily, there are many methods towards reducing that amount and ultimately saving marine life.
+            </div>
+            <br><br>
+            <div>
+                <h4> 1. <u>Eliminate Plastic Straws:</u></h4><br> According to statistics, approximately 500 million straws are used by humans every single day. An alternative to this is to use reusable straws like ones made from steel, bamboo, and glass.
+                <br><br>
+                <h4>2. <u>Say No to Plastic Bags:</u></h4><br> According to statistics, one million plastic bags are used everyday and at the same time, 500 billion bags are produced. As an alternative, people can use reusable bags when going shopping. As
+                less and less plastic bags are used, less plastic waste would end up being dumped into the ocean. <br><br>
+                <h4>3. <u>Bye Bye Plastic Bottles:</u></h4> <br> Throughout a person’s daily life, an individual tends to carry plastic water bottles. While this may seem convenient to all, it is in fact, harmful when they end up in the wrong places. As an
+                alternative towards plastic water bottles, one can use a stainless steel, glass, or reusable bottle. <br><br>
+                <h4>4. <u>Avoid Food Products with Excess Packaging:</u></h4><br> People everywhere are guilty of buying products that are wrapped with plastics, many of which contain more individually wrapped plastic. One way to change this is by buying
+                the bigger pack of a product. This way, people would use less plastic. <br><br>
+                <h4>5. <u>Say Adios to Plastic Utensils</u></h4><br> Most of the plastic utensils we obtain mainly come from when we order take out from a restaurant. Since we are going home to get food to eat, there is no point in getting these plastic utensils.
+                Through such action, we can help the environment by reducing the amount of plastic that exists within our own daily lives.
 
-    <!-- Copy and paste the div below for additional paragraphs-->
-    <div class="row">
-        <div class="col-md-10 offset-md-1 article">
-
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-10 offset-md-1 article">
+                    <img src="img/kaitlyn2.jpg">
+                </div>
+            </div>
+            <br><br>
         </div>
-    </div>
-    <!-- -->
+
 </body>
 
 </html>
