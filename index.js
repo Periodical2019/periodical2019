@@ -1,5 +1,5 @@
 $(function() {
-      $(".button img:nth-child(2)").css("display", "none")
+      $(".button img:last-child").css("display", "none")
     
     
     
@@ -57,12 +57,17 @@ $(function() {
 
 
   
-    
+    $(".dropmenu a").click(function(){
+        $(".dropmenu").slideUp()
+        $(".button").find("img, h4").toggle()
+    })
 
     $(".button").click(function() {
 
         $(".button").find("img, h4").toggle()
         $(".dropmenu").slideToggle()
+        
+      
 
 
     })
