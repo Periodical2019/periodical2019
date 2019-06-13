@@ -2,7 +2,7 @@
 
 ## Home
 
-Plastics had been a big and controversial topic throughout the years. What is plastic exactly? How is it a problem? What can we do to prevent this problem? If you are curious about finding the answers to all those questions, click [here](periodical2019.github.io) to find a variety of articles talking about this topic of plastic issue.
+Plastics had been a big and controversial topic throughout the years. What is plastic exactly? How is it a problem? What can we do to prevent this problem? If you are curious about finding the answers to all those questions, click [here](https://periodical2019.github.io/) to find a variety of articles talking about this topic of plastic issue.
 
 ---
 ## Overview
