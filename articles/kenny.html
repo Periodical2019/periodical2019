@@ -3,74 +3,189 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>periodical2019</title>
+    <title>title</title>
 
-    <!-- Latest compiled and minified CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript 4.3.1 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .caption {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            margin-top: 1em;
+        }
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+        .landing-text {
+            font-size: 80px;
+            color: white;
+        }
 
-    <!--External Third party Js-->
-    <!--Math Equation JS [if applicable]-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        h3::after {
+            display: block;
+            content: '';
+            background-color: lightgray;
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+        }
 
-    <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="articles.css">
+        .home-inner {
+            position: relative;
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0 00px;
+            filter: blur(3px);
+            z-index: 1;
+        }
 
-    <!-- JS -->
-    <script src="../index.js"></script>
 
-    <!--Google Fonts-->
+        section {
+            padding-top: 0%;
+        }
 
+        .title-wrapper {
+            height: 10vh;
+            width: 100%;
+            padding: 20;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid #ddd;*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+
+        .col-10 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .title {
+            font-size: 50px;
+            color: white;
+            background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+            background-image: url(plastic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .byline {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            font-size: 20px;
+            padding: 3em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            min-width: auto;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+        .breakbar {
+            height: 5vh;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-    
-    <!--(START) HTML FOR NAVBAR / MENU-->
-
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/logo.png"></img>
-            <img src="../images/logo2.png"></img>
+    <div id="home">
+        <!---Nav-->
+        <!---Landing-->
+        <div class="landing" id="home">
+            <div class="home-wrap">
+                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, 0.8), rgba(0, 0, 0, 0.1)), url('../images/sections/kenny1.jpg') no-repeat center; background-size:cover">
+                </div>
+            </div>
         </div>
-
-        <div id="button">
-            <img src="../images/arrowdown.png"></img>
-            <img src="../images/arrowup.png"></img>
+        <div class="caption center-block text-center">
+            <h3 class="landing-text">BPA in Plastics</h3>
+            <a href="#intro" class="btn btn-outline-light btn-lg" href="#">By: Kenny Parra</a>
         </div>
-
     </div>
+    <div class="breakbar"></div>
+    <div class="container">
 
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
+
+
+        <!--Content-->
+
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                The Oceans of our green planet are being contaminated through our discarding of trash and plastics into the ocean. Plastics being thrown into the ocean have caused them to breakdown via the sunlight, which can take years. The decomposition of plastic
+                creates nano plastics with,small pieces of plastic that are hard to clean up, it also releases BPA (Bisphenol A), which is found in Polycarbonate. plastics.Polycarbonate plastics is a lightweight, high performance plastic that has a distinctive
+                toughness. This type of plastic is commonly used with average goods found today. An essential part of polycarbonate plastics is BPA. BPA is soluble in organic solvents like water. It is a concern that countries are dumping plastic into
+                the ocean which will dissolve through time. In 2012, the United States banned the use of BPA in baby bottles and other plastics in bottles because of the effects BPA had on children and adults. BPA was reported to hinder the growth development
+                of babies and cause infertility with couples. This is a downside for the development children because BPA levels keep increasing. BPA is an issue but companies that make BPA free plastics will not do much help. Plastics do not really just
+                release BPA, it also release other toxins like antimony (Sb), which was researched to be a Carcinogen. Carcinogen is a substance that can cause cancer. Plastics dumped into the ocean are exposed to the sun constantly which will release
+                these toxins into our waters that we are used as drinking water. BPA is a highly controversial and debated topic, people oppose one another on the safety of its effects. BPA has an estrogen like shape. Dud to its molecular shape, BPA can
+                attach to estrogen receptors that can impair cell development and reproduction. This is the reason it is highly dangerous to humans; it not only affects the environment but also affects the held or nature and humans. Its shape has allowed
+                it to start affecting our health in a matter of ways but if we continue dumping plastic into the ocean, the levels of BPA. This in turn, affects our health because we ingest it in our drinking water. These effects may increase dramatically
+                if not fixed. The use of BPA in plastics like baby bottles has caused social medias and parents to panic on the health of their children. The scandal and panic caused major companies that create baby bottles and the F.D.A to stop using
+                BPA in their bottles and switch to friendlier alternatives.
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="img/kenny2.jpg">
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                Plastics besides releasing harmful toxins, also clump up to form gyres, a collection of plastics and other wastes. These gyres of plastic are growing so huge that the Great pacific garbage patch was reported to be the size of Texas.The size of these gyres
+                can cause massive increases in the levels of toxicity in the ocean. As gyres are formed BPA is further released into the oceans. The higher quantity of BPA subsequently caused a chain reaction of destruction. Sea life is exposed to this
+                toxicity and swallow the toxins as if they were like any other food source. As time passes and fish are collected for sale, humans too will be exposed to higher levels of BPA. As presented earlier, higher BPA levels for any creature is
+                highly detrimental to their health. To conclude, the use and production of BPA is the leading cause of plastic toxicity. The lasting effects on nature and on humanity are far more dangerous than the actual production.
+
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                <h4><u>Plastic Oceans:</u></h4>
+                The ocean <br> A home of life and nourishment <br> Our long time friend <br> A trusted ally <br> Until the day we go selfish <br> Imbued with our laziness <br> We betray it with our waste <br> In a matter of haste <br> We throw our trash
+                and plastics <br> But in return we show no concern <br> We release toxins into our water <br> But it just comes back to us <br> How long will it be <br> Until we suffer dearly from our incompetence <br>
+
+            </div>
+        </div>
+        <br><br>
     </div>
-
-    <!--(END) HTML FOR NAVBAR / MENU-->
-
-    <header id="kenny-img">
-        <h1 id="title">Title</h1>
-        <h2 id="subtitle">by Kenny</h2>
-    </header>
-
-    <p></p>
 
 </body>
 

@@ -30,7 +30,114 @@
     <script src="../index.js"></script>
 
     <!--Google Fonts-->
+    
+        <style type="text/css">
+        .caption {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            margin-top: 1em;
+        }
 
+        .landing-text {
+            font-size: 80px;
+            color: white;
+        }
+
+        h3::after {
+            display: block;
+            content: '';
+            background-color: lightgray;
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+        }
+
+        .home-inner {
+            position: relative;
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0 00px;
+            filter: blur(3px);
+            z-index: 1;
+        }
+
+
+        section {
+            padding-top: 0%;
+        }
+
+        .title-wrapper {
+            height: 10vh;
+            width: 100%;
+            padding: 20;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid #ddd;*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+
+        .col-10 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .title {
+            font-size: 50px;
+            color: white;
+            background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+            background-image: url(plastic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .byline {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            font-size: 20px;
+            padding: 3em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            min-width: auto;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+        .breakbar {
+            height: 5vh;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -71,24 +178,69 @@
         <h2 id="subtitle">by Munisa</h2>
     </header>
 
-    <br>
-    <p>Have you ever wondered if schools actually recycle plastics or do they just throw them out with the rest of the trash? Plastics accumulated in schools are supposedly brought to a local Materials Recovery Facility, but do they really end up there?
-        Well, as stated by some statistics, many schools actually fail at recycling, and this is one of the reasons for plastic pollution to occur. When people throw out their plastics on the streets, or carelessly leave them somewhere, they end up negatively
-        impacting the environment. Eventually, all of the plastics end up in the oceans or on landfills which leads to a sudden drop in the population of the marine life. Schools can be blamed for this issue because not much of the staff and students
-        recycle their plastics. They either throw them in the hallways or leave them in their classrooms. According to Local Law 19, it is a legal requirement that every schools recycle their wastes, including plastics. But why don’t many schools follow
-        this mandated law? Are they just lazy? Recycling after yourself is a very easy task and if everyone comes together to address this issue then there can be a positive change. Also, getting rid of the waste in landfills is really expensive. For
-        instance, NYC itself spends over $300 million yearly just to send the trash to another state (www1.nyc.gov). If schools become more strict about recycling, then the annual cost to get rid of the waste in landfills in NYC could drop. Additionally,
-        if you look around, a blue bin in schools are for throwing plastics, but most of the times they are filled with garbage or papers, which is not the right bin for these materials. This is also a problem because if you throw your waste in the wrong
-        bins, they could end up in the wrong facilities which then increases pollution. Another reason why schools contribute to plastic pollution is that in the cafeterias, most foods are served in plastic containers or with plastic utensils. After students
-        are done eating, they just throw out their trash with the plastics in the same garbage bin. This actually goes against the law requirements because according to the NYC government, every school needs three bins in the cafeterias, one is for plastics,
-        the other is for papers or cardboards and the last one is just for trash. Most schools usually have one grey bin where everything is thrown inside it, which is the reason why plastic pollution takes place. According to a website (lessismore.org),
-        up to 80% of school waste is actually recyclable and if most schools take actions then there would be a huge impact on the environment. Although most plastics are not being recycled, there are many ways to solve these issues inside schools. For
-        instance, there are Zero Waste programs, whose goal is to divert recyclable materials from 100 participating Zero Waste schools in five years. There could also be after school clubs that raise awareness about plastic pollution to the staff and
-        students. In addition, in order to encourage everyone to recycle their plastics, schools could make contests or competitions to see which classes recycle the most in return for memorable awards or trips. As you can see, schools also play a role
-        in order to maintain a safe and healthy environment.
-    </p>
+
+    <div id="home">
+        <!---Nav-->
+        <!---Landing-->
+        <div class="landing" id="home">
+            <div class="home-wrap">
+                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, .8), rgba(0, 0, 0, .1)), url('plastic.jpg') no-repeat center; background-size:cover">
+                </div>
+            </div>
+        </div>
+        <div class="caption center-block text-center">
+            <div class="vertical-bar"></div>
+            <h3 class="landing-text">Are schools neglecting plastic pollution?</h3>
+            <h4 class="author" style="color:white;">By Munisa</h4>
+        </div>
+    </div>
+    <div class="breakbar"></div>
+    <div class="container">
 
 
+
+        <!--Content-->
+
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-8 article">
+                Paragraph 1<br> Have you ever wondered if schools actually recycle plastics or do they just throw them out with the rest of the trash? Plastics accumulated in schools are supposedly brought to a local Materials Recovery Facility, but do they really end up there? Well, as stated by some statistics, many schools actually fail at recycling, and this is one of the reasons for plastic pollution to occur. When people throw out their plastics on the streets, or carelessly leave them somewhere, they end up negatively impacting the environment. Eventually, all of the plastics end up in the oceans or on landfills which leads to a sudden drop in the population of the marine life. Schools can be blamed for this issue because not much of the staff and students recycle their plastics. They either throw them in the hallways or leave them in their classrooms. 
+
+            </div>
+            <div class="col-md-4 imgdiv">
+                <img class="img2" src="plastic.jpg">
+            </div>
+
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                Paragraph 2<br>According to Local Law 19, it is a legal requirement that every schools recycle their wastes, including plastics. But why don’t many schools follow this mandated law? Are they just lazy? Recycling after yourself is a very easy task and if everyone comes together to address this issue then there can be a positive change. Also, getting rid of the waste in landfills is really expensive. For instance, NYC itself spends over $300 million yearly just to send the trash to another state (www1.nyc.gov). If schools become more strict about recycling, then the annual cost to get rid of the waste in landfills in NYC could drop. 
+            </div>
+
+            <div class="col-md-12 article">
+                Paragraph 3<br> Additionally, if you look around, a blue bin in schools are for throwing plastics, but most of the times they are filled with garbage or papers, which is not the right bin for these materials. This is also a problem because if you throw your waste in the wrong bins, they could end up in the wrong facilities which then increases pollution. Another reason why schools contribute to plastic pollution is that in the cafeterias, most foods are served in plastic containers or with plastic utensils. After students are done eating, they just throw out their trash with the plastics in the same garbage bin. This actually goes against the law requirements because according to the NYC government, every school needs three bins in the cafeterias, one is for plastics, the other is for papers or cardboards and the last one is just for trash. Most schools usually have one grey bin where everything is thrown inside it, which is the reason why plastic pollution takes place. According to a website (lessismore.org), up to 80% of school waste is actually recyclable and if most schools take actions then there would be a huge impact on the environment. 
+            </div>
+            <div class="col-md-12 article">
+                Paragraph 4<br> These are some of the materials that people could substitute plastic with and it’s really important to do so. This is connected to today’s world because right now people is still looking for materials to substitute plastic
+                with and at the same time to be beneficial for us as human beings and our planet. Perhaps if we can cut down the usage of plastic by half, then it would help us, ocean, animals, and the earth in dramatic amount. SAVE THE WORLD!!!
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-10 offset-md-1 article">
+            <img src="plastic.jpg">
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Copy and paste the div below for additional paragraphs-->
+    <div class="row">
+        <div class="col-md-10 offset-md-1 article">
+
+        </div>
+    </div>
+    <!-- -->
 </body>
 
 </html>

@@ -3,74 +3,210 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>periodical2019</title>
+    <title>title</title>
 
-    <!-- Latest compiled and minified CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript 4.3.1 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .caption {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            margin-top: 1em;
+        }
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+        .landing-text {
+            font-size: 80px;
+            color: white;
+        }
 
-    <!--External Third party Js-->
-    <!--Math Equation JS [if applicable]-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        h3::after {
+            display: block;
+            content: '';
+            background-color: lightgray;
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+        }
 
-    <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="articles.css">
+        .home-inner {
+            position: relative;
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0 00px;
+            filter: blur(3px);
+            z-index: 1;
+        }
 
-    <!-- JS -->
-    <script src="../index.js"></script>
 
-    <!--Google Fonts-->
+        section {
+            padding-top: 0%;
+        }
 
+        .title-wrapper {
+            height: 10vh;
+            width: 100%;
+            padding: 20;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid #ddd;*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+
+        .col-10 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .title {
+            font-size: 50px;
+            color: white;
+            background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+            background-image: url(plastic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .byline {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            font-size: 20px;
+            padding: 3em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            min-width: auto;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+        .breakbar {
+            height: 5vh;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-    
-    <!--(START) HTML FOR NAVBAR / MENU-->
-
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/logo.png"></img>
-            <img src="../images/logo2.png"></img>
+    <div id="home">
+        <!---Nav-->
+        <!---Landing-->
+        <div class="landing" id="home">
+            <div class="home-wrap">
+                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, 0.8), rgba(0, 0, 0, 0.1)), url('../images/sections/melissa1.jpg') no-repeat center; background-size:cover">
+                </div>
+            </div>
         </div>
-
-        <div id="button">
-            <img src="../images/arrowdown.png"></img>
-            <img src="../images/arrowup.png"></img>
+        <div class="caption center-block text-center">
+            <h3 class="landing-text">The Fantastic Ten</h3>
+            <a href="#intro" class="btn btn-outline-light btn-lg" href="#">By: Melissa Palapa Chino</a>
         </div>
-
     </div>
+    <div class="breakbar"></div>
+    <div class="container">
 
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
-    </div>
 
-    <!--(END) HTML FOR NAVBAR / MENU-->
 
-    <header id="melissa-img">
-        <h1 id="title">Title</h1>
-        <h2 id="subtitle">by Melissa</h2>
-    </header>
+        <!--Content-->
 
-    <p></p>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                A vast problem that our environment faces is the pollution caused by plastic,also known as plastic pollution. Our plastic ends in our oceans, rivers, and lakes in various ways. On a yearly average 12 million tonnes of waste enter our water systems. But
+                how does all this plastic end up in our waterways?
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                There are many ways that all our garbage ends up in our oceans, rivers and lakes. Most of our waste is left in areas that are open, so the chance that a gust of wind comes and lifts our garbage up is high. As the wind keeps pushing theses pieces of garbage,
+                they end up in our waterways. Another major factor that accumulates plastic pollution is the illegal dumping of waste into the ocean itself. Many big companies dump their waste into the ocean to not deal with it.
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="../images/sections/melissa-t.jpg">
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                Some of these big companies are probably once we all have heard about. In July, 2019 a major water company was discovered to be illegally be dumping waste. Crystal Geyser was found to be dumping hazardous material. Arsenic tainted water is a very dangerous
+                material. Before 2015 this water company would dump it in ponds in Northern California, they were instructed to stop after authorities found it dangerous. They continued to illegally dump this material until they were discovered. Not only
+                companies from the United States being are punished for this. Two Greek shipping companies were fined for disposing of material that is hazardous . In, January of 2017, Oceanfleet Shipping Limited, and Oceanic Ilsabe where fined an estimate
+                of 2.7 million dollars together. Their actions are completely illegal, it stated in both international laws and the U.S forbids it. These are only two of the few companies that are actual uncovered for illegal displacement of dangerous
+                materials. On the other hand there is still a large group of companies that continue to illegally dispose of dangerous materials or plastic.
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                An alarming reality that many aren’t aware of is that 90% of our plastic pollution is held within 10 rivers around asia and africa. Many of these rivers are in places that are highly populated . Approximately these rivers contribute between 410,000 to
+                4 million tons of waste each year. The following is a list of the rivers <br> 1- Yangtze River, China <br> length : 3915 mi <br> 2-Hai he River, China <br> length :825.8mi <br> 3-Yellow River, China <br> length :3395 mi
+                <br> 4-Mekong River - various countries <br> length :2703 <br> 5-Pearl River - China and Vietnam <br> length :1243 mi <br> 6- Indus River - China, India, Pakistan <br> length :1976 mi <br> 7- Ganges River - India and Bangladesh <br> length
+                :1569 mi <br> 8- Amur River - Russia, China <br> length :1755 mi <br> 9- Nile River - multiple countries <br> length :4132 mi <br> 10-Niger River - various countries <br> length :2597 mi <br>
+
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="img/melissa3.jpg">
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                This problem of high population can be solved if the community were to monitor the amount of waste they are sending to landfill or simple throwing it away. Since the surrounding communities contribute to the waste in this riveres. They should have proper
+                bins that would allow the proper disposal of garbage . as result that these communities are usually in poverty the proper disposal of garbage can be really hard to complete.
+            </div>
+            <br><br>
+            <div class="row justify-content-justify-content-center">
+                <div class="col-md-12 article">
+                    An additional major problem is the fact that 80% of the pollution is fishing gear and objects related to this. As fishing decreases the number of ghost nets increases as companies don't know what actions to take in order to dispose of such gear. The government
+                    needs to become more strict and create more laws that will punish the illegal dumping of waste. As many point out most of these rivers are in parts of Asia and Africa. So why isn't the United States apart of this list. Many are oblivious
+                    to the knowledge that the United States ships most of its waste to low income countries that are in Asia or Africa. The United States pays these countries to take in there waste. This signifies that the risk of have high polluted rivers
+                    is very low.
+
+                </div>
+                <br><br>
+
+            </div>
 
 </body>
 

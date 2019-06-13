@@ -13,9 +13,6 @@ body {
     margin: 0px;
 }
 
-body {
-    background-color: white;
-}
 
 
 /*FONTS*/
@@ -41,31 +38,35 @@ body {
 .frontpage {
     color: black;
     width: 100%;
-    background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/front.jpg) no-repeat center center fixed;
+    background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/mainpage/front.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 10px;
+    padding-top: 60px;
 }
 
-h2, h5 {
+h1,
+h2,
+h5 {
     font-family: moonbold;
 }
 
-h6 { 
+h6 {
     font-family: moonreg;
 }
 
 .title {
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    margin: 0px;
-    background-color: rgba(242, 242, 242);
+    padding: 10px !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: auto !important;
+    bottom: 0px !important;
+    margin: 0px !important;
+    background-color: rgba(242, 242, 242) !important;
 }
 
 .title h2,
 .title h6 {
-    margin: 0px;
+    margin: 0px !important;
 }
 
 .title h2 {
@@ -90,8 +91,8 @@ h6 {
 }
 
 .sub {
-    border:1px solid  rgba(242, 242, 242,.1) !important;
-    padding:5px;
+    border: 1px solid rgba(242, 242, 242, .1) !important;
+    padding: 6px;
     border: none;
     color: white;
 }
@@ -100,7 +101,6 @@ h6 {
 .top #large {
     height: 400px;
 }
-
 
 
 .bottom,
@@ -116,7 +116,7 @@ h6 {
 
 .sub h2 {
     font-family: moonreg;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .mini img {
@@ -127,33 +127,115 @@ h6 {
 }
 
 
+
 /*CSS FOR BACKGROUNDS*/
 
 .irene {
-    background: url("images/irene-w.jpeg") no-repeat center center;
+    background: url("images/mainpage/irene-w.jpeg") no-repeat center center;
     background-size: cover;
 }
 
-.melissa {
-    background: url("images/melissa-t.jpg") no-repeat center center;
+.xia {
+    background: url("images/mainpage/manny.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .munisa {
-    background: url("images/munisa-t.jpg") no-repeat center center;
+    background: url("images/mainpage/munisa-t.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .jessica {
-    background: url("images/jessica-t.jpg") no-repeat center center;
+    background: url("images/mainpage/jessica-t.jpg") no-repeat center center;
     background-size: cover;
 }
 
 
+/*CSS FOR SECTIONS*/
+
+.sections {
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    padding: 10px;
+}
+
+.sections [id] h1 {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sections [id] div {
+    position: relative;
+    border: 1px solid black;
+    height: 300px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+
+}
+
+.sections [id] img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#plastic,
+#land,
+#ocean,
+#done_about_it,
+#could_do {
+    padding: 10px;
+}
+
+.subtitle {
+    color: black !important;
+    display: block !important;
+    border: none !important;
+    padding: 10px !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: auto !important;
+    bottom: 0px !important;
+    margin: 0px !important;
+    background-color: rgba(242, 242, 242) !important;
+
+}
+
+.subtitle h1 {
+    font-size: 25px;
+    margin: 0px !important;
+    border: none !important;
+}
+
+a {
+    color:black !important;
+}
+
+.mini a {
+    color:white !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 
 /*CSS FOR SECTION PAGES*/
 
-#probland h1 {
+#probland h1, #probocean h1 {
     text-align: center;
     font-family: moonbold;
     font-size: 60px;
@@ -174,3 +256,29 @@ h6 {
     url('images/land.jpg') no-repeat center;
     background-size: cover;
 }
+
+#probocean {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.1)),
+    url('images/ocean.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.mini2 {
+    color: white;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.mini2 img {
+    float: left;
+    margin-right: 20px;
+    width: 230px;
+    height: 150px;
+}
+
+
+

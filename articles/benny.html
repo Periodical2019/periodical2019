@@ -3,74 +3,200 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>periodical2019</title>
+    <title>title</title>
 
-    <!-- Latest compiled and minified CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript 4.3.1 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .caption {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            margin-top: 1em;
+        }
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+        .landing-text {
+            font-size: 80px;
+            color: white;
+        }
 
-    <!--External Third party Js-->
-    <!--Math Equation JS [if applicable]-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        h3::after {
+            display: block;
+            content: '';
+            background-color: lightgray;
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+        }
 
-    <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="articles.css">
+        .home-inner {
+            position: relative;
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0 00px;
+            filter: blur(3px);
+            z-index: 1;
+        }
 
-    <!-- JS -->
-    <script src="../index.js"></script>
 
-    <!--Google Fonts-->
+        section {
+            padding-top: 0%;
+        }
 
+        .title-wrapper {
+            height: 10vh;
+            width: 100%;
+            padding: 20;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid #ddd;*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+
+        .col-10 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .title {
+            font-size: 50px;
+            color: white;
+            background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+            background-image: url(plastic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .byline {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            font-size: 20px;
+            padding: 3em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            min-width: auto;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+        .breakbar {
+            height: 5vh;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-    
-    <!--(START) HTML FOR NAVBAR / MENU-->
-
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/logo.png"></img>
-            <img src="../images/logo2.png"></img>
+    <div id="home">
+        <!---Nav-->
+        <!---Landing-->
+        <div class="landing" id="home">
+            <div class="home-wrap">
+                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, 0.8), rgba(0, 0, 0, 0.1)), url('../images/sections/benny.jpg') no-repeat center; background-size:cover">
+                </div>
+            </div>
         </div>
-
-        <div id="button">
-            <img src="../images/arrowdown.png"></img>
-            <img src="../images/arrowup.png"></img>
+        <div class="caption center-block text-center">
+            <h3 class="landing-text">Plastics in Oceans?!</h3>
+           <h4 class="author" style="color:white;">By: Benny Chen</h4>
         </div>
-
     </div>
+    <div class="breakbar"></div>
+    <div class="container">
 
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
+
+
+        <!--Content-->
+
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                There are lots of plastic pollution in the oceans of our world. A way to fix such issue includes reducing our use of plastic.
+            </div>
+        </div>
+        <br><br>
+        <div class="col-md-12 article">
+            When plastic’s usage gets reduced, the amount that gets thrown out into the ocean gets reduced too. This way, fishes and other organisms would have less plastics around to eat. No matter where you live, the easiest and most direct way that you can get
+            started is by reducing your own use of single-use plastics. Single-use plastics include plastic bags, water bottles, straws, cups, utensils, dry cleaning bags, take-out containers, and any other plastic items that are used once and then discarded.
+            Although your efforts to reduce the usage of single-use plastics are negligible compared to the rest of the plastics in the ocean, it’s good to be aware of how much plastic people are using on a daily basis, which can encourage others to reduce
+            the usage of single-use plastics.
+
+        </div>
     </div>
-
-    <!--(END) HTML FOR NAVBAR / MENU-->
-
-    <header id="benny-img">
-        <h1 id="title">Title</h1>
-        <h2 id="subtitle">by Benny</h2>
-    </header>
-
-    <p></p>
+    <br><br>
+    <div class="row">
+        <div class="col-md-10 offset-md-1 article">
+            <img src="img/benny2.jpeg">
+        </div>
+    </div>
+    <br><br>
+    <div class="row justify-content-justify-content-center">
+        <div class="col-md-12 article">
+            Some things that have led to plastic getting into our oceans are those who live in urban areas because they would use single use plastics for convenience purposes. Not only this, there are also people who throw trash down the drain or the toilet, leading
+            to even more plastic going into the oceans. Even if you live hundreds of miles from the coast, the plastic you throw away could make its way into the sea. Once in the ocean, plastic decomposes very slowly, breaking down into tiny pieces known
+            as micro plastics that can be incredibly damaging to sea life. Today, 80% of plastic in our oceans is from land sources.
+        </div>
+    </div>
+    <br><br>
+    <div class="row justify-content-justify-content-center">
+        <div class="col-md-12 article">
+            It is known that fishes in the Northern Pacific ingest 12,000 to 24,000 tons of plastic every year. This can lead to intestinal injury and death. It also results in the transfers plastics going up the food chain; from smaller fishes, to bigger fishes,
+            to marine mammals, and eventually humans. In fact, it was found in a recent study that a quarter of fish at markets in California contained plastic in their guts, mostly in the form of plastic microfibers. Plastic you put in the bin ends up
+            in landfill. When rubbish is being transported to landfill, plastic is often blown away because it’s lightweight. From there, it can eventually clutter around drains, enter rivers and the sea this way. Litter dropped on the street doesn’t
+            stay there. Rainwater and wind carries plastic waste into streams, rivers, and through drains that lead to the ocean!
+        </div>
+    </div>
+    <br><br>
+    <div class="row justify-content-justify-content-center">
+        <div class="col-md-12 article">
+            Careless and improper waste disposal is also a big contributor, illegal dumping of waste adds greatly to the plastic surge in our seas. A positive move in recent months was a ban on microbeads in rinse-off cosmetic and cleaning products introduced by
+            the UK Government, so that these small plastic beads will no longer get washed down the sink and out into our oceans. However, there are many factors that contribute to the problem of microplastics swarming in our oceans such as water bottles,
+            plastic bags, plastic straws, etc. Due to the misuse of daily pastics, the ocean creatures are significantly harmed.
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-10 offset-md-1 article">
+            <img src="img/benny3.jpg">
+        </div>
+    </div>
+    <br><br>
+    </div>
 
 </body>
 

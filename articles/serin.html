@@ -3,74 +3,205 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>periodical2019</title>
+    <title>title</title>
 
-    <!-- Latest compiled and minified CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript 4.3.1 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .caption {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            margin-top: 1em;
+        }
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+        .landing-text {
+            font-size: 80px;
+            color: white;
+        }
 
-    <!--External Third party Js-->
-    <!--Math Equation JS [if applicable]-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        h3::after {
+            display: block;
+            content: '';
+            background-color: lightgray;
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+        }
 
-    <!-- Custom CSS Stylesheets -->
-    <link rel="stylesheet" href="articles.css">
+        .home-inner {
+            position: relative;
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0 00px;
+            filter: blur(3px);
+            z-index: 1;
+        }
 
-    <!-- JS -->
-    <script src="../index.js"></script>
 
-    <!--Google Fonts-->
+        section {
+            padding-top: 0%;
+        }
 
+        .title-wrapper {
+            height: 10vh;
+            width: 100%;
+            padding: 20;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /*background-color: #eee;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid #ddd;*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+
+        .col-10 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .title {
+            font-size: 50px;
+            color: white;
+            background: linear-gradient( rgba(0, 0, 0, 7), rgba(0, 0, 0, .1));
+            background-image: url(plastic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .byline {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            font-size: 20px;
+            padding: 3em;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            min-width: auto;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+        .breakbar {
+            height: 5vh;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
-    
-    <!--(START) HTML FOR NAVBAR / MENU-->
-
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/logo.png"></img>
-            <img src="../images/logo2.png"></img>
+    <div id="home">
+        <!---Nav-->
+        <!---Landing-->
+        <div class="landing" id="home">
+            <div class="home-wrap">
+                <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, 0.8), rgba(0, 0, 0, 0.1)), url('../images/sections/serin1.jpg') no-repeat center; background-size:cover">
+                </div>
+            </div>
         </div>
-
-        <div id="button">
-            <img src="../images/arrowdown.png"></img>
-            <img src="../images/arrowup.png"></img>
+        <div class="caption center-block text-center">
+            <h3 class="landing-text">What’s In Your Cup?</h3>
+            <a href="#intro" class="btn btn-outline-light btn-lg" href="#">By: Serin Sarsour</a>
         </div>
-
     </div>
+    <div class="breakbar"></div>
+    <div class="container">
 
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
+
+
+        <!--Content-->
+
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                Water is something that most living things need to survive. However, what if I told you that the water you’re consuming daily contains plastic? Air pollution can cause plastic microparticles, or plastic fibers, to make their way into our drinking water.
+                The plastic from bottle caps on water bottles is another source of the plastic microparticles found in drinking water. In addition to water bottles, plastic microfibers are also found in tap water. Some scientists suggest that synthetic
+                clothing like sportswear, or textiles like carpets, are to blame for the plastic microfibers found in our tap water.
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="img/serin2.png">
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                Due to the fact that plastic microparticles and microfibers are extremely tiny, it is difficult to remove them from water. It’s not like we could filter out all the water around the world. The difficulty in removing plastic microparticles is that many
+                of them are less dense than water. As a result, the plastic microparticles would float and not be removed from the water. Plastic microparticles usually repel water and tend to bind with toxins that don’t dissolve which makes it harder
+                to remove them from water. Current technology is another factor that makes microplastics difficult to remove because it isn’t advanced enough. Perhaps in the future there will be new gadgets and gizmos that are able to resolve this issue.
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="img/serin3.jpg">
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                There is no clear evidence that the level of plastic pollution humans consume harms our health. However, the plastic microparticles originating from air pollution can cause inflammation which may result in other toxins entering the body. The plastic in
+                the air comes from the litter that enters our environment ceaselessly. Air pollution also comes from textiles and clothing containing artificial materials like plastic, otherwise known as synthetic clothing. The plastic microparticles
+                in water can attach themselves to compounds containing other toxic metals, and organic pollutants called dioxins. Dioxins are known to cause reproductive and developmental problems, as well as cancer. Extremely small plastic microfibers
+                are also known to possibly be able to enter the bloodstream.
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="img/serin4.jpg">
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-justify-content-center">
+            <div class="col-md-12 article">
+                On the other hand, plastic microparticles may simply pass through our bodies without leaving anything behind. Even though there are no clear facts on how the plastics we are drinking in our water affects our health, we are still early in our research
+                on this matter. Though, this lack of research doesn’t imply that drinking plastics, pollutants, and dioxins are safe. There may be more research and clearer connections made between plastics and our health given another 50 years. Should
+                we wait until then to be concerned about what is in our drinking water?
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 article">
+                <img src="img/serin5.gif">
+            </div>
+        </div>
+        <br><br>
     </div>
-
-    <!--(END) HTML FOR NAVBAR / MENU-->
-
-    <header id="serin-img">
-        <h1 id="title">Title</h1>
-        <h2 id="subtitle">by Serin</h2>
-    </header>
-
-    <p></p>
 
 </body>
 
