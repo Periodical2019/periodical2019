@@ -67,7 +67,6 @@ $(function() {
         "Brian Lin",
         "Jackson Wu",
         "Jerry Li",
-        "John Yaakoub",
         "Kevin Hernandez",
         "Lianys Feliciano",
         "Melissa Romano",
