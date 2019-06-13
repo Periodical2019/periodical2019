@@ -52,11 +52,6 @@ $(function() {
     });
 
 
-
-
-
-
-  
     $(".dropmenu a").click(function(){
         $(".dropmenu").slideUp()
         $(".button").find("img, h4").toggle()
