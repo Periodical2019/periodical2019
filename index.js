@@ -1,7 +1,12 @@
 $(function() {
-    $("#dropdown").css("display", "none")
-
-
+      $(".button img:last-child").css("display", "none")
+    
+    
+    
+    
+    
+    
+    
     var w = $(window).width()
 
     if (w > 649) {
@@ -51,15 +56,15 @@ $(function() {
 
 
 
-    $("#button").click(function() {
-        $("#dropdown").slideToggle()
-        $(this).find("img").toggle(100)
-        $("#logo").find("img").toggle()
+  
+    
 
-        $("#navbar h6").css("color", "white")
+    $(".button").click(function() {
 
-
-
+        $(".button").find("img, h4").toggle()
+        $(".dropmenu").slideToggle()
+        
+      
 
 
     })

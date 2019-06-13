@@ -13,9 +13,7 @@ body {
     margin: 0px;
 }
 
-body {
-    background-color: white;
-}
+
 
 
 /*FONTS*/
@@ -44,6 +42,29 @@ body {
     background: linear-gradient(180deg, transparent 0%, #000 100%), url(images/mainpage/front.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 10px;
+    padding-top: 60px;
+}
+
+#intro {
+    text-align: center;
+    color:white;
+    margin-bottom:50px;
+}
+
+#intro #divider {
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:white;
+    height:7px;
+    width:80px;
+}
+#intro h1 {
+    font-size:100px;
+}
+#intro h5 {
+    letter-spacing: 2px;
+    margin-bottom:15px;
 }
 
 h1,
@@ -138,7 +159,7 @@ h6 {
 }
 
 .xia {
-    background: url("images/mainpage/manny.jpg") no-repeat center center;
+    background: url("images/mainpage/mandy.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -155,29 +176,31 @@ h6 {
 
 /*CSS FOR SECTIONS*/
 
-.sections{
+.sections {
     text-align: center;
-    color: white;
     width: 100%;
-    background: linear-gradient(180deg, #000 0%, transparent 100%), url(images/mainpage/front2.png) no-repeat center center fixed;
     background-size: cover;
     padding: 10px;
 }
 
+.sections [id] h1 {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
 .sections [id] div {
-    
     position: relative;
     border: 1px solid black;
     height: 300px;
-    margin:0 auto 20px;
+    margin: 0 auto 20px;
     overflow: hidden;
 
 }
 
 .sections [id] img {
-   object-fit: cover;
-   width: 100%;
-   height:100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 #plastic,
@@ -189,8 +212,8 @@ h6 {
 }
 
 .subtitle {
-    color:black !important;
-    display:block !important;
+    color: black !important;
+    display: block !important;
     border: none !important;
     padding: 10px !important;
     position: absolute !important;
@@ -199,27 +222,66 @@ h6 {
     bottom: 0px !important;
     margin: 0px !important;
     background-color: rgba(242, 242, 242) !important;
+
 }
 
 .subtitle h1 {
-    font-size:25px;
+    font-size: 25px;
+    margin: 0px !important;
+    border: none !important;
 }
 
+a {
+    color:black !important;
+}
 
+.mini a{
+    color:white !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 
 /*CSS FOR SECTION PAGES*/
 
-#probland h1 {
+#probland h1, #probocean h1 {
     text-align: center;
     font-family: moonbold;
-    font-size: 60px;
+    font-size: 100px;
     color: white;
     vertical-align: middle;
     /* only works with a display of table-cell which makes the text centered vertically*/
     display: table-cell;
     /* must have a parent with a display of table */
     color: white;
+}
+
+@media (max-width: 768px) {
+    #probland h1, #probocean h1 {
+        font-size: 60px;
+    }
+}
+
+/*Mobile First Design*/
+
+@media (max-width: 568px) {
+    #probland h1, #probocean h1 {
+        font-size: 40px;
+    }
 }
 
 #probland {
@@ -231,3 +293,33 @@ h6 {
     url('images/land.jpg') no-repeat center;
     background-size: cover;
 }
+
+#probocean {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.1)),
+    url('images/ocean.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.jumbotron {
+    margin:0;
+}
+
+.mini2 {
+    color: white;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.mini2 img {
+    float: left;
+    margin-right: 20px;
+    width: 230px;
+    height: 150px;
+}
+
+
+
