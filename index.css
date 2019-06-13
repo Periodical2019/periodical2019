@@ -45,6 +45,28 @@ body {
     padding-top: 60px;
 }
 
+#intro {
+    text-align: center;
+    color:white;
+    margin-bottom:50px;
+}
+
+#intro #divider {
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:white;
+    height:7px;
+    width:80px;
+}
+#intro h1 {
+    font-size:100px;
+}
+#intro h5 {
+    letter-spacing: 2px;
+    margin-bottom:15px;
+}
+
 h1,
 h2,
 h5 {
@@ -280,6 +302,10 @@ a:active {
     rgba(0, 0, 0, 0.1)),
     url('images/ocean.jpg') no-repeat center;
     background-size: cover;
+}
+
+.jumbotron {
+    margin:0;
 }
 
 .mini2 {
