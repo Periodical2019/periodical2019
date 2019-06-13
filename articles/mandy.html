@@ -21,6 +21,7 @@
 
     <!-- Custom CSS Stylesheets -->
     <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="../nav.css">
 
     <!-- JS -->
     <script src="../index.js"></script>
@@ -29,35 +30,47 @@
 
 </head>
 
+<style>
+    #home {
+        padding-top:48px !important;
+    }
+    
+    
+</style>
+
 <body>
 
-    <!--(START) HTML FOR NAVBAR / MENU-->
+     <!--(START) HTML FOR NAVBAR / MENU-->
+     <div class="navbar">
 
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/navbar/logo.png"></img>
-            <img src="../images/navbar/logo2.png"></img>
+       
+        
+        
+
+    </div>
+    
+     <div class="button">
+            <img src="../images/navbar/arrowdown.png">
+            <img src="../images/navbar/arrowup.png">
         </div>
-
-        <div id="button">
-            <img src="../images/navbar/arrowdown.png"></img>
-            <img src="../images/navbar/arrowup.png"></img>
+    
+    <div class="dropmenu">
+        <h5>Topics</h5>
+        <div class="items">
+            <h2><a href="">What Is Plastic?</a></h2>
+            <h2><a href="">The Problem on Land</a></h2>
+            <h2><a href="">The Problem in the Ocean</a></h2>
+            <h2><a href="">What has been done about it?</a></h2>
+            <h2><a href="">What could we do?</a></h2>
         </div>
 
     </div>
+    
+    
 
-    <div id="dropdown">
-        <h2>TOPICS</h2>
-        <ul>
-            <li>WHAT IS PLASTIC?</li>
-            <li>THE PROBLEM ON LAND</li>
-            <li>THE PROBLEM IN THE OCEAN</li>
-            <li>WHAT HAS BEEN DONE ABOUT IT?</li>
-            <li>WHAT COULD WE DO?</li>
-            <div class="dropdown-divider"></div>
-            <li>ABOUT US</li>
-        </ul>
-    </div>
+   
+
+
 
     <!--(END) HTML FOR NAVBAR / MENU-->
 
@@ -65,7 +78,7 @@
         <!---Nav-->
 
         <!---Landing-->
-        <div class="landing" id="home">
+        <div class="landing">
             <div class="home-wrap">
                 <div class="home-inner" style="background:linear-gradient( rgba(20, 0, 30, .8), rgba(0, 0, 0, .1)), url('plastic.jpg') no-repeat center; background-size:cover">
                 </div>

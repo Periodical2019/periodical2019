@@ -1,5 +1,5 @@
 $(function() {
-      $(".button img:nth-child(2)").css("display", "none")
+      $(".button img:last-child").css("display", "none")
     
     
     
@@ -63,6 +63,8 @@ $(function() {
 
         $(".button").find("img, h4").toggle()
         $(".dropmenu").slideToggle()
+        
+      
 
 
     })

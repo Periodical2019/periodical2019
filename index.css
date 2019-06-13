@@ -15,6 +15,7 @@ body {
 
 
 
+
 /*FONTS*/
 
 @font-face {
@@ -42,6 +43,28 @@ body {
     background-size: cover;
     padding: 10px;
     padding-top: 60px;
+}
+
+#intro {
+    text-align: center;
+    color:white;
+    margin-bottom:50px;
+}
+
+#intro #divider {
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:white;
+    height:7px;
+    width:80px;
+}
+#intro h1 {
+    font-size:100px;
+}
+#intro h5 {
+    letter-spacing: 2px;
+    margin-bottom:15px;
 }
 
 h1,
@@ -136,7 +159,7 @@ h6 {
 }
 
 .xia {
-    background: url("images/mainpage/manny.jpg") no-repeat center center;
+    background: url("images/mainpage/mandy.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -212,7 +235,7 @@ a {
     color:black !important;
 }
 
-.mini a {
+.mini a{
     color:white !important;
 }
 
@@ -238,13 +261,27 @@ a:active {
 #probland h1, #probocean h1 {
     text-align: center;
     font-family: moonbold;
-    font-size: 60px;
+    font-size: 100px;
     color: white;
     vertical-align: middle;
     /* only works with a display of table-cell which makes the text centered vertically*/
     display: table-cell;
     /* must have a parent with a display of table */
     color: white;
+}
+
+@media (max-width: 768px) {
+    #probland h1, #probocean h1 {
+        font-size: 60px;
+    }
+}
+
+/*Mobile First Design*/
+
+@media (max-width: 568px) {
+    #probland h1, #probocean h1 {
+        font-size: 40px;
+    }
 }
 
 #probland {
@@ -265,6 +302,10 @@ a:active {
     rgba(0, 0, 0, 0.1)),
     url('images/ocean.jpg') no-repeat center;
     background-size: cover;
+}
+
+.jumbotron {
+    margin:0;
 }
 
 .mini2 {
