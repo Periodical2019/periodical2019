@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 /*FONTS*/
@@ -34,7 +34,6 @@ body {
     src: url("fonts/Moon2.0-Bold.otf")
 }
 
-
 /*CSS FOR FRONT PAGE*/
 
 .frontpage {
@@ -48,24 +47,26 @@ body {
 
 #intro {
     text-align: center;
-    color:white;
-    margin-bottom:50px;
+    color: white;
+    margin-bottom: 50px;
 }
 
 #intro #divider {
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
-    background-color:white;
-    height:7px;
-    width:80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    height: 7px;
+    width: 80px;
 }
+
 #intro h1 {
-    font-size:65px;
+    font-size: 65px;
 }
+
 #intro h5 {
     letter-spacing: 2px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 h1,
@@ -121,11 +122,9 @@ h6 {
     color: white;
 }
 
-
 .top #large {
     height: 400px;
 }
-
 
 .bottom,
 .top {
@@ -150,8 +149,6 @@ h6 {
     height: 75px;
 }
 
-
-
 /*CSS FOR BACKGROUNDS*/
 
 .irene {
@@ -174,7 +171,6 @@ h6 {
     background-size: cover;
 }
 
-
 /*CSS FOR SECTIONS*/
 
 .sections {
@@ -195,7 +191,6 @@ h6 {
     height: 300px;
     margin: 0 auto 20px;
     overflow: hidden;
-
 }
 
 .sections [id] img {
@@ -223,7 +218,6 @@ h6 {
     bottom: 0px !important;
     margin: 0px !important;
     background-color: rgba(242, 242, 242) !important;
-
 }
 
 .subtitle h1 {
@@ -233,33 +227,25 @@ h6 {
 }
 
 a {
-    color:black !important;
+    color: black !important;
 }
 
-.mini a{
-    color:white !important;
+.mini a {
+    color: white !important;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
+a:link,
+a:visited,
+a:hover,
 a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 
 /*CSS FOR SECTION PAGES*/
 
-#probland h1, #probocean h1, #beendone h1 {
+#probland h1,
+#probocean h1,
+#beendone h1 {
     text-align: center;
     font-family: moonbold;
     font-size: 100px;
@@ -272,7 +258,9 @@ a:active {
 }
 
 @media (max-width: 768px) {
-    #probland h1, #probocean h1, #beendone h1 {
+    #probland h1,
+    #probocean h1,
+    #beendone h1 {
         font-size: 60px;
     }
 }
@@ -280,7 +268,9 @@ a:active {
 /*Mobile First Design*/
 
 @media (max-width: 568px) {
-    #probland h1, #probocean h1, #beendone h1 {
+    #probland h1,
+    #probocean h1,
+    #beendone h1 {
         font-size: 40px;
     }
 }
@@ -315,9 +305,8 @@ a:active {
     background-size: cover;
 }
 
-
 .jumbotron {
-    margin:0;
+    margin: 0;
 }
 
 .mini2 {
@@ -332,8 +321,3 @@ a:active {
     width: 230px;
     height: 150px;
 }
-
-
-
-
-
